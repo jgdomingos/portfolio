@@ -1,0 +1,12 @@
+:root {
+    --color-primary: #7ee0c3;
+    --color-second: ;
+    --color-background: #10141c;
+    --color-background2: #090909;
+    --color-border: #171c26;
+    --color-text: #e8ecf1;
+
+    --font-primary: "JetBrains Mono", monospace;
+
+    --border: 2px solid #1d232f;
+}
