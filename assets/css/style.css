@@ -282,6 +282,9 @@ hr {
   padding: 0 14rem;
   gap: 4rem;
 }
+#skills h2 {
+  margin-bottom: -3rem;
+}
 
 .skills {
   display: grid;
