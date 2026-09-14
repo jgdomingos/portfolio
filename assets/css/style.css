@@ -221,6 +221,10 @@ hr {
   text-align: justify;
 }
 
+.brackets {
+  color: var(--color-primary);
+}
+
 .infoAboutMe h3{
   font-size: 2rem;
   color: var(--color-primary);
