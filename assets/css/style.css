@@ -8,11 +8,32 @@
 body {
   color: var(--color-text);
   background-color: var(--color-background);
+  background-image:
+    linear-gradient(rgba(126, 224, 195, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(126, 224, 195, 0.035) 1px, transparent 1px);
+  background-size: 45px 45px;
+  animation: move-grid 20s linear infinite;
+}
+
+@keyframes move-grid {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 45px 45px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
 }
 
 nav {
   display: flex;
-  padding: 1.25rem;
+  padding: 1.3rem;
   margin: 0;
   align-items: center;
   justify-content: space-between;
