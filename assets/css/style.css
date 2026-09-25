@@ -230,17 +230,17 @@ nav ul a:hover {
   margin-bottom: 1rem;
 }
 
-.social-icons {
+.socialIcons {
   display: flex;
   gap: 1.5rem;
   margin-top: 1rem;
 }
 
-.social-icons a {
+.socialIcons a {
   transition: transform 0.3s ease;
 }
 
-.social-icons a:hover {
+.socialIcons a:hover {
   transform: scale(1.2);
 }
 
@@ -628,6 +628,14 @@ hr {
 #education .cardSchool a:not(.btnEducation) {
   color: var(--color-text);
   text-decoration: none;
+}
+
+.visitSite {
+  transition: color 0.3s ease;
+}
+
+#education .cardSchool a.visitSite:hover {
+  color: var(--color-primary);
 }
 
 @media (max-width: 900px) {
