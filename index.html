@@ -27,7 +27,10 @@
         <!-- Navegation Bar -->
         <nav>
             <p><strong><span>João Guilherme</span> | .Dev</strong></p>
-            <ul>
+            <button id="navToggle" class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <ul id="navMenu">
                 <li><a class="active" href="#aboutMe">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -37,8 +40,8 @@
             </ul>
 
             <div class="social-icons">
-                <a href="https://github.com/jgdomingos" target="_blank"><i class="fa-brands fa-github" style="color: rgb(126, 224, 195);"></i></a>
-                <a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: rgb(126, 224, 195);"></i></a>
+                <a href="https://github.com/jgdomingos" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github iconPrimary"></i></a>
+                <a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in iconPrimary"></i></a>
                 <!-- From Uiverse.io by ilkhoeri --> 
                 <button class="action_has has_saved" aria-label="save" type="button">
                     <svg
@@ -86,9 +89,9 @@
                 <p>I build modern websites and web applications.</p>
 
                 <div class="social-icons">
-                    <a href="https://github.com/jgdomingos" target="_blank"><i class="fa-brands fa-github" style="color: rgb(126, 224, 195);"></i></a>
-                    <a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: rgb(126, 224, 195);"></i></a>
-                    <a href=""><i class="fa-solid fa-file-arrow-down" style="color: rgb(126, 224, 195);"></i></a>
+                    <a href="https://github.com/jgdomingos" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github iconPrimary"></i></a>
+                    <a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in iconPrimary"></i></a>
+                    <a href=""><i class="fa-solid fa-file-arrow-down iconPrimary" aria-label="Download Current"></i></a>
                 </div>
             </div>
 
@@ -118,43 +121,49 @@
 
             <div class="cardsAboutMe">
                 <!-- Card Total Projects -->
-                <article>
-                    <div>
-                        <i class="fa-solid fa-code" style="color: rgb(126, 224, 195);"></i>
-                        <p><strong>2</strong></p>
-                    </div>
-
-                    <div>
-                        <p><strong>TOTAL PROJECTS</strong></p>
-                        <img src="./assets/images/icons/ArrowIcon.png" alt="arrow">
-                    </div>
-                </article>
+                 <a href="#projects">
+                     <article>
+                         <div>
+                             <i class="fa-solid fa-code iconPrimary" aria-hidden="true"></i>
+                             <p><strong>2</strong></p>
+                         </div>
+     
+                         <div>
+                             <p><strong>TOTAL PROJECTS</strong></p>
+                             <img src="./assets/images/icons/ArrowIcon.png" alt="arrow">
+                         </div>
+                     </article>
+                 </a>
 
                 <!-- Card Total Certificates -->
-                <article>
-                    <div>
-                        <i class="fa-solid fa-medal" style="color: rgb(126, 224, 195);"></i>
-                        <p><strong>6</strong></p>
-                    </div>
-
-                    <div>
-                        <p><strong>TOTAL CERTIFICATES</strong></p>
-                        <img src="./assets/images/icons/ArrowIcon.png" alt="arrow">
-                    </div>
-                </article>
+                 <a href="#education">
+                     <article>
+                         <div>
+                             <i class="fa-solid fa-medal iconPrimary" aria-hidden="true"></i>
+                             <p><strong>6</strong></p>
+                         </div>
+     
+                         <div>
+                             <p><strong>TOTAL CERTIFICATES</strong></p>
+                             <img src="./assets/images/icons/ArrowIcon.png" alt="arrow">
+                         </div>
+                     </article>
+                 </a>
 
                 <!-- Card Experience -->
-                <article>
-                    <div>
-                        <i class="fa-solid fa-globe" style="color: rgb(126, 224, 195);"></i>
-                        <p><strong>2</strong></p>
-                    </div>
-
-                    <div>
-                        <p><strong>EXPERIENCE</strong></p>
-                        <img src="./assets/images/icons/ArrowIcon.png" alt="arrow">
-                    </div>
-                </article>
+                 <a href="#experiences">
+                     <article>
+                         <div>
+                             <i class="fa-solid fa-globe iconPrimary" aria-hidden="true"></i>
+                             <p><strong>2</strong></p>
+                         </div>
+     
+                         <div>
+                             <p><strong>EXPERIENCE</strong></p>
+                             <img src="./assets/images/icons/ArrowIcon.png" alt="arrow">
+                         </div>
+                     </article>
+                 </a>
             </div>
 
         </section>
@@ -192,7 +201,7 @@
                     <h3>Back-end</h3>
 
                     <div>
-                        <img src="./assets/images/technologies/Python.png" alt="Python" width="300px" height="300px">
+                        <img src="./assets/images/technologies/Python.png" alt="Python" width="300" height="300">
                         <p>Python</p>
                     </div>
                     <div>
@@ -256,7 +265,7 @@
                         </div>
                         <div>
                             <a href="https://www.linkedin.com/feed/update/urn:li:activity:7502845742156410880/" target="_blank">View</a>
-                            <a href="https://github.com/jgdomingos/loja-pecas-java" target="_blank"><i class="fa-brands fa-github" style="color: rgb(126, 224, 195); font-size: 18px"></i></a>
+                            <a href="https://github.com/jgdomingos/loja-pecas-java" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github" style="color: rgb(126, 224, 195); font-size: 18px"></i></a>
                         </div>
                     </div>
                 </article>
@@ -333,8 +342,8 @@
 
                     <!-- Social -->
                     <div>
-                        <a href="https://www.umc.br/" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square" style="color: rgb(126, 224, 195);"></i></a>
-                        <a href="https://www.linkedin.com/school/universidade-de-mogi-das-cruzes/home/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: rgb(126, 224, 195); font-size: 18px"></i></a>
+                        <a href="https://www.umc.br/" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square iconPrimary"></i></a>
+                        <a href="https://www.linkedin.com/school/universidade-de-mogi-das-cruzes/home/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" style="color: rgb(126, 224, 195); font-size: 18px"></i></a>
                     </div>
                 </article>
 
@@ -361,8 +370,8 @@
                     <!-- Social -->
                      <div>
                         <a href="" class="btnEducation">Certificates</a>
-                        <a href="https://onebitcode.com/?utm_source=google&utm_medium=cpc&utm_campaign=branded&utm_content=institucional&utm_source=google&utm_medium=cpc&utm_campaign=23724379896&utm_content=196607338953&utm_term=onebitcode&gad_source=1&gad_campaignid=23724379896&gbraid=0AAAAAC8sR416XvCLVSRxK58X7gF24uL4H&gclid=CjwKCAjwnvTUBhBoEiwAZNDxZ1EP2OJIG-q99gEVDAtcooMD5I3QN22mCyaAydFg-UaoZKlOGLzOJhoCb8wQAvD_BwE" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square" style="color: rgb(126, 224, 195);"></i></a>
-                        <a href="https://www.linkedin.com/school/onebitcode/home/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: rgb(126, 224, 195); font-size: 18px"></i></a>
+                        <a href="https://onebitcode.com/?utm_source=google&utm_medium=cpc&utm_campaign=branded&utm_content=institucional&utm_source=google&utm_medium=cpc&utm_campaign=23724379896&utm_content=196607338953&utm_term=onebitcode&gad_source=1&gad_campaignid=23724379896&gbraid=0AAAAAC8sR416XvCLVSRxK58X7gF24uL4H&gclid=CjwKCAjwnvTUBhBoEiwAZNDxZ1EP2OJIG-q99gEVDAtcooMD5I3QN22mCyaAydFg-UaoZKlOGLzOJhoCb8wQAvD_BwE" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square iconPrimary"></i></a>
+                        <a href="https://www.linkedin.com/school/onebitcode/home/" target="_blank" aria-label="linkedin"><i class="fa-brands fa-linkedin-in" style="color: rgb(126, 224, 195); font-size: 18px"></i></a>
                      </div>
                 </article>
 
@@ -389,8 +398,8 @@
                     <!-- Social -->
                     <div>
                         <a href="" class="btnEducation">Certificates</a>
-                        <a href="https://escoladiscover.com.br/" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square" style="color: rgb(126, 224, 195);"></i></a>
-                        <a href="https://www.linkedin.com/company/discoveron/home/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: rgb(126, 224, 195); font-size: 18px"></i></a>
+                        <a href="https://escoladiscover.com.br/" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square iconPrimary"></i></a>
+                        <a href="https://www.linkedin.com/company/discoveron/home/" target="_blank" aria-label="linkedin"><i class="fa-brands fa-linkedin-in" style="color: rgb(126, 224, 195); font-size: 18px"></i></a>
                     </div>
                 </article>
 
@@ -415,10 +424,10 @@
                     </div>
 
                     <!-- Social -->
-                    <div>
+                    <div class="social">
                         <a href="" class="btnEducation">Certificates</a>
-                        <a href="https://megahub.fluency.io/fa/primeira-turma/matriculas-geral" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square" style="color: rgb(126, 224, 195);"></i></a>
-                        <a href="https://www.linkedin.com/company/fluencyacademy/home/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: rgb(126, 224, 195); font-size: 18px"></i></a>
+                        <a href="https://megahub.fluency.io/fa/primeira-turma/matriculas-geral" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square iconPrimary"></i></a>
+                        <a href="https://www.linkedin.com/company/fluencyacademy/home/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" style="color: rgb(126, 224, 195); font-size: 18px"></i></a>
                     </div>
                 </article>
             </div>
@@ -437,5 +446,6 @@
 
     </footer>
 
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
