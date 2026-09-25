@@ -542,6 +542,7 @@ hr {
 .timeLineDate {
   color: var(--color-primary);
   font-size: 0.9rem;
+  text-decoration: none;
 }
 
 .work img {
