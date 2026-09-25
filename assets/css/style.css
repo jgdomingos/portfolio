@@ -545,6 +545,13 @@ hr {
   text-decoration: none;
 }
 
+.timeLineDate a,
+.timeLineDate a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+
 .work img {
   width: 50px;
   height: 50px;
