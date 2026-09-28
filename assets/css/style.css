@@ -330,7 +330,7 @@ hr {
   gap: 0.5rem;
 }
 
-.cardsAboutMe img[alt="arrow"]{
+.cardsAboutMe .arrowIcon {
   width: 20px;
   transform: rotate(-180deg);
   filter: brightness(0) invert(1);
