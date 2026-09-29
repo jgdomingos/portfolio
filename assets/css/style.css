@@ -300,12 +300,21 @@ hr {
 }
 
 .btn {
-  display: inline-block;
   background-color: var(--color-primary);
+  border-radius: 5px;
+  border: 1px solid transparent;
   color: var(--color-background2);
+  display: inline-block;
   padding: 10px;
   text-decoration: none;
-  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-border);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+
 }
 
 .infoAboutMe > div {
@@ -401,6 +410,10 @@ hr {
   width: 30px;
   height: 30px;
   object-fit: contain;
+}
+
+.githubSkillIcon {
+  filter: brightness(0) invert(1);
 }
 
 /* Section Projects */
@@ -735,7 +748,7 @@ hr {
 
   .timeLineItem::before {
     top: 2rem;
-    left: -2rem;
+    left: -1.5rem;
   }
 }
 
