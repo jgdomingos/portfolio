@@ -41,9 +41,9 @@
                 <li><a href="#contact">Contact</a></li>
                 <!-- Apenas em versões mobile -->
                 <hr class="mobileOnly">
-                <li class="mobileOnly"><a href="./assets/docs/Joao Guilherme Silva Domingos.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down iconPrimary" aria-hidden="true" style="font-size: 18px"></i>Curriculum</a></li>
-                <li class="mobileOnly"><a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank"><i class="fa-brands fa-linkedin-in iconPrimary" aria-hidden="true" style="font-size: 18px"></i>LinkedIn</a></li>
-                <li class="mobileOnly"><a href="https://github.com/jgdomingos" target="_blank"><i class="fa-brands fa-github iconPrimary" aria-hidden="true" style="font-size: 18px"></i>GitHub</a></li>
+                <li class="mobileOnly"><a href="./assets/docs/Joao Guilherme Silva Domingos.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down iconPrimary" aria-hidden="true" style="font-size: 18px"></i> Curriculum</a></li>
+                <li class="mobileOnly"><a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank"><i class="fa-brands fa-linkedin-in iconPrimary" aria-hidden="true" style="font-size: 18px"></i> LinkedIn</a></li>
+                <li class="mobileOnly"><a href="https://github.com/jgdomingos" target="_blank"><i class="fa-brands fa-github iconPrimary" aria-hidden="true" style="font-size: 18px"></i> GitHub</a></li>
             </ul>
 
             <div class="socialIcons">
@@ -452,6 +452,77 @@
         <!-- Contact -->
         <section id="contact">
 
+            <h2><span class="brackets">&lt;</span>Contact<span class="brackets">&gt;</span></h2>
+            <p>Got an opportunity, a project in mind, or just want to say hi? My inbox is open.</p>
+
+            <div class="contactGrid">
+
+                <!-- Quick Contact-->
+                <div class="contactInfo">
+
+                    <!-- Email -->
+                    <div class="contactItem">
+                        <i class="fa-solid fa-envelope iconPrimary" aria-hidden="true"></i>
+                        <div>
+                            <span>Email</span>
+                            <a href="mailto:jgsdomingoss@gmail.com">jgsdomingoss@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="contactItem">
+                        <i class="fa-brands fa-linkedin-in iconPrimary" aria-hidden="true"></i>
+                        <div>
+                            <span>LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank">/jgsdomingos</a>
+                        </div>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="contactItem">
+                        <i class="fa-brands fa-github iconPrimary" aria-hidden="true"></i>
+                        <div>
+                            <span>GitHub</span>
+                            <a href="https://github.com/jgdomingos" target="_blank">/jgdomingos</a>
+                        </div>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="contactItem">
+                        <i class="fa-solid fa-location-dot iconPrimary" aria-hidden="true"></i>
+                        <div>
+                            <span>Location</span>
+                            <p>São Paulo - Sp · Open to remote, hybrid, and in-office work</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contactForm">
+
+                    <!-- Name Field-->
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+
+                    <!-- Message Field -->
+                     <div>
+                        <label for="message">Message:</label>
+                        <input type="message" id="message" name="message" rows="5" required placeholder="Tell me about the opportunity or project...">
+                     </div>
+
+                     <!-- Button send message -->
+                     <button type="submit" class="btn">Send Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+                </form>
+
+            </div>
+
         </section>
 
     </main>
@@ -465,6 +536,7 @@
                 <p>Full Stack Developer</p>
             </div>
 
+            <!-- Quick Links -->
             <div>
                 <p><strong><span class="brackets">&lt;</span>Quick Links<span class="brackets">&gt;</span></strong></p>
                 <ul>
@@ -478,6 +550,7 @@
                 </ul>
             </div>
 
+            <!-- Quick Contact -->
             <div>
                 <p><strong><span class="brackets">&lt;</span>Available for opportunities and projects<span class="brackets">&gt;</span></strong></p>
                 <ul>
@@ -488,6 +561,8 @@
             </div>
 
         </div>
+
+        <!-- Rights -->
         <hr>
         <p>&copy;2026 João GUilherme. Todos os direitos reservados.</p>
     </footer>

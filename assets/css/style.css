@@ -827,3 +827,7 @@ hr {
   );
   border-radius: 1.5px;
 }
+
+footer > p {
+  text-align: center;
+}
