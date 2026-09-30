@@ -22,3 +22,26 @@ const yearSpan = document.getElementById("year");
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
+
+// Formulário de contato -> abre o cliente de e-mail do visitante já preenchido
+// (sem back-end. Para não depender do cliente de e-mail, troque por Formspree/EmailJS/Web3Forms)
+const contactForm = document.getElementById("contactForm");
+ 
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+ 
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+ 
+    if (!name || !email || !message) {
+      return;
+    }
+ 
+    const subject = encodeURIComponent(`Contato via portfólio - ${name}`);
+    const body = encodeURIComponent(`${message}\n\n---\nNome: ${name}\nE-mail: ${email}`);
+ 
+    window.location.href = `mailto:jgsdomingoss@gmail.com?subject=${subject}&body=${body}`;
+  });
+}

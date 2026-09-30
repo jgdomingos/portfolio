@@ -57,7 +57,7 @@ body {
   color: var(--color-primary);
 }
 
-#hero, #aboutMe, #skills, #projects, #experiences, #education, #footer {
+#hero, #aboutMe, #skills, #projects, #experiences, #education, #contact, #footer {
   padding: 0 clamp(1.5rem, 6vw, 14rem);
 }
 
@@ -705,7 +705,8 @@ hr {
 @media (max-width: 900px) {
   .skills,
   .projectsCards,
-  #education > div {
+  #education > div,
+  .contactGrid {
     grid-template-columns: 1fr;
   }
 
@@ -738,6 +739,11 @@ hr {
     grid-template-columns: 1fr;
   }
 
+  .footerGrid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .timeline {
     grid-template-columns: 1fr;
     padding-left: 2rem;
@@ -762,6 +768,14 @@ hr {
   #hero {
     flex-direction: column-reverse;
   }
+
+  .contactForm {
+    padding: 1.25rem;
+  }
+
+  .contactItem {
+    align-items: flex-start;
+  }
 }
 
 .cardSchool > div:last-child {
@@ -777,6 +791,118 @@ hr {
 .social .btnEducation + a {
   margin-left: auto;
 }
+
+#contact {
+  display: grid;
+  margin: 7.5rem 0;
+  gap: 4rem;
+}
+
+#contact h2 {
+  margin-bottom: -3rem;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-border);
+  border: var(--border);
+  border-radius: 5px;
+  padding: 1rem 1.25rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.contactItem > div {
+  min-width: 0;
+}
+
+.contactItem:hover {
+  border-color: var(--color-primary);
+  transform: translateX(4px);
+}
+
+.contactItem i {
+  font-size: 1.25rem;
+  width: 1.5rem;
+  text-align: center;
+}
+
+.contactItem span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text);
+  opacity: 0.6;
+}
+
+.contactInfo a,
+.contactInfo p {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.contactItem a:hover{
+  color: var(--color-primary);
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background-color: var(--color-border);
+  border: var(--border);
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.contactForm > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contactForm label {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  background-color: var(--color-background);
+  border: var(--border);
+  border-radius: 5px;
+  padding: 0.75rem;
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.contactForm button {
+  border: none;
+  align-self: flex-start;
+}
+
 
 #footer {
   background-color: var(--color-border);
@@ -830,4 +956,10 @@ hr {
 
 footer > p {
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
 }
