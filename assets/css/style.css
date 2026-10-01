@@ -731,6 +731,23 @@ hr {
   color: var(--color-primary);
 }
 
+.seeMore {
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  color: var(--color-border);
+  display: block;
+  padding: 0.35rem 0.35rem;
+  margin-inline: auto;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  width: fit-content;
+}
+.seeMore:hover {
+  background-color: var(--color-border);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
 @media (max-width: 900px) {
   .skills,
   .projectsCards,
