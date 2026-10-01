@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 /* Chrome, Edge e Safari */
@@ -30,11 +31,25 @@ html {
 body {
   color: var(--color-text);
   background-color: var(--color-background);
+  overflow-x: clip;
   background-image:
     linear-gradient(rgba(126, 224, 195, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(126, 224, 195, 0.035) 1px, transparent 1px);
   background-size: 45px 45px;
   animation: move-grid 20s linear infinite;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(70vw, 900px);
+  height: min(70vw, 900px);
+  background: radial-gradient(circle, rgba(126, 224, 195, 0.10), transparent 70%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 @keyframes move-grid {

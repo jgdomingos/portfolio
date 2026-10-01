@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
+    <!-- AOS Animated -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -91,7 +94,7 @@
         <!-- Hero -->
         <section id="hero">
 
-            <div class="hero">
+            <div class="hero" data-aos="fade-right" data-aos-duration="800">
                 <h1>Hi, i'm <span class="brackets">João Guilherme</span>.<br>I'm a Fullstack Developer</h1>
                 <p>I build modern websites and web applications.</p>
 
@@ -102,7 +105,7 @@
                 </div>
             </div>
 
-            <div>
+            <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
                 <img src="./assets/images/Joao.jpeg" alt="João Guilherme" width="250px" height="250px">
             </div>
 
@@ -115,7 +118,7 @@
         <section id="aboutMe">
 
             <!-- Section about me h3, p and buttons -->
-            <div class="infoAboutMe">
+            <div class="infoAboutMe" data-aos="fade-right">
                 <h2><span class="brackets">&lt;</span>About Me<span class="brackets">&gt;</span></h2>
                 <h3>Hello, my name is <br>João Guilherme</h3>
                 <p>I am a Software Engineering student and developer driven by curiosity and the desire to turn ideas into real-world solutions. For me, programming goes beyond writing code: it is about solving problems, exploring possibilities, and building things that truly work. I am constantly learning, experimenting with new technologies, and developing projects to put my knowledge into practice. My goal is to keep growing, tackle new challenges, and build a career in technology through continuous learning and meaningful projects.</p>
@@ -126,7 +129,7 @@
                 </div>
             </div>
 
-            <div class="cardsAboutMe">
+            <div class="cardsAboutMe" data-aos="fade-left">
                 <!-- Card Total Projects -->
                  <a href="#projects">
                      <article>
@@ -186,7 +189,7 @@
             <div class="skills">
 
                 <!-- Skills Front-end -->
-                <article class="cardSkills">
+                    <article class="cardSkills" data-aos="fade-up" data-aos-delay="0">
                     <h3>Front-end</h3>
                     
                     <div>
@@ -204,7 +207,7 @@
                 </article>
 
                 <!-- Skills Back-end -->
-                <article class="cardSkills">
+                <article class="cardSkills" data-aos="fade-up" data-aos-delay="100">
                     <h3>Back-end</h3>
 
                     <div>
@@ -218,7 +221,7 @@
                 </article>
 
                 <!-- Skills Database -->
-                <article class="cardSkills">
+                <article class="cardSkills" data-aos="fade-up" data-aos-delay="200">
                     <h3>Database</h3>
 
                     <div>
@@ -232,7 +235,7 @@
                 </article>
 
                 <!-- Skills Tools -->
-                <article class="cardSkills">
+                <article class="cardSkills" data-aos="fade-up" data-aos-delay="300">
                     <h3>Tools</h3>
 
                     <div>
@@ -266,7 +269,7 @@
             <div class="projectsCards">
 
                 <!-- Complete Parts Store CRUD Project -->
-                <article class="cardProject">
+                <article class="cardProject" data-aos="zoom-in-up">
                     <img src="./assets/images/Projects/Estoque.jpg" alt="Project Preview">
                     <div class="projectInfo">
                         <h3>Inventory Control</h3>
@@ -299,7 +302,7 @@
             <div class="timeline">
 
                 <!-- Pedra Forte Quarry -->
-                <article class="timeLineItem">
+                <article class="timeLineItem" data-aos="fade-right">
                     <div class="work">
                         <span class="timeLineDate"><i class="fa-regular fa-calendar"></i> 08/2025 - 02/2026</span>
                         <img src="./assets/images/Work/Quarry.jpg" alt="PedraForte">
@@ -311,7 +314,7 @@
                 </article>
 
                 <!-- Paramount Textiles -->
-                 <article class="timeLineItem">
+                 <article class="timeLineItem" data-aos="fade-left" data-aos-delay="150">
                     <div class="work">
                         <span class="timeLineDate"><i class="fa-regular fa-calendar"></i> 02/2026 - At the moment</span>
                         <img src="./assets/images/Work/Paramount.jpg" alt="Paramount">
@@ -334,7 +337,7 @@
             <div>
 
                 <!-- UMC -->
-                <article class="cardSchool">
+                <article class="cardSchool" data-aos="fade-up" data-aos-delay="0">
                     <div class="school">
                         <h3>University of Mogi das Cruzes</h3>
                         <img src="./assets/images/Schools/UMC.png" alt="UMC">
@@ -363,7 +366,7 @@
                 </article>
 
                 <!-- OneBitCode -->
-                <article class="cardSchool">
+                <article class="cardSchool" data-aos="fade-up" data-aos-delay="100">
                     <div class="school">
                         <h3>OneBitCode</h3>
                         <img src="./assets/images/Schools/OneBitCode.png" alt="OneBitCode">
@@ -391,7 +394,7 @@
                 </article>
 
                 <!-- Discover -->
-                <article class="cardSchool">
+                <article class="cardSchool" data-aos="fade-up" data-aos-delay="200">
                     <div class="school">
                         <h3>Discover School</h3>
                         <img src="./assets/images/Schools/Discover" alt="Discover">
@@ -419,7 +422,7 @@
                 </article>
 
                 <!-- Fluency Academy -->
-                <article class="cardSchool">
+                <article class="cardSchool" data-aos="fade-up" data-aos-delay="300">
                     <div class="school">
                         <h3>Fluency Academy</h3>
                         <img src="./assets/images/Schools/Fluency.png" alt="Fluency Academy">
@@ -458,7 +461,7 @@
             <div class="contactGrid">
 
                 <!-- Quick Contact-->
-                <div class="contactInfo">
+                    <div class="contactInfo" data-aos="fade-right">
 
                     <!-- Email -->
                     <div class="contactItem">
@@ -497,7 +500,7 @@
                     </div>
                 </div>
 
-                <form id="contactForm" class="contactForm">
+                <form id="contactForm" class="contactForm" data-aos="fade-left" data-aos-delay="150">
 
                     <!-- Name Field-->
                     <div>
@@ -531,13 +534,13 @@
     <footer id="footer">
         <div class="footerGrid">
 
-            <div>
+            <div data-aos="fade-up">
                 <p><span class="brackets">João Guilherme</span></p>
                 <p>Full Stack Developer</p>
             </div>
 
             <!-- Quick Links -->
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
                 <p><strong><span class="brackets">&lt;</span>Quick Links<span class="brackets">&gt;</span></strong></p>
                 <ul>
                     <li><a href="#hero">Home</a></li>
@@ -551,7 +554,7 @@
             </div>
 
             <!-- Quick Contact -->
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
                 <p><strong><span class="brackets">&lt;</span>Available for opportunities and projects<span class="brackets">&gt;</span></strong></p>
                 <ul>
                     <li><a href="mailto:jgsdomingoss@gmail.com">Email</a></li>
@@ -568,5 +571,19 @@
     </footer>
 
     <script src="./assets/js/script.js"></script>
+
+    <!-- AOS Animated -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            easing: "ease-out-cubic",
+            offset: 80,
+            once: true,
+            anchorPlacement: "top-bottom",
+            disable: () => window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        });
+    </script>
+
 </body>
 </html>
