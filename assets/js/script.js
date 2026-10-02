@@ -45,3 +45,22 @@ if (contactForm) {
     window.location.href = `mailto:jgsdomingoss@gmail.com?subject=${subject}&body=${body}`;
   });
 }
+
+// Button to return to the top
+const btnTop = document.getElementById('btnTop');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    btnTop.classList.add('active');
+  } else {
+    btnTop.classList.remove('active');
+  }
+});
+
+btnTop.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
