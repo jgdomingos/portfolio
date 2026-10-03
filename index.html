@@ -43,21 +43,22 @@
 
             <!-- Quick links menu -->
             <ul id="navMenu">
-                <li><a class="active" href="#aboutMe">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="active" href="#aboutMe" data-i18n="nav.about">About Me</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#experiences" data-i18n="nav.experiences">Experiences</a></li>
+                <li><a href="#education" data-i18n="nav.education">Education</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                 <!-- Apenas em versões mobile -->
                 <hr class="mobileOnly">
-                <li class="mobileOnly"><a href="./assets/docs/Joao Guilherme Silva Domingos.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down iconPrimary" aria-hidden="true" style="font-size: 18px"></i> Curriculum</a></li>
+                <li class="mobileOnly"><a href="./assets/docs/Joao Guilherme Silva Domingos.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down iconPrimary" aria-hidden="true" style="font-size: 18px" ></i> <span data-i18n="nav.curriculum">Curriculum</span></a></li>
                 <li class="mobileOnly"><a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank"><i class="fa-brands fa-linkedin-in iconPrimary" aria-hidden="true" style="font-size: 18px"></i> LinkedIn</a></li>
                 <li class="mobileOnly"><a href="https://github.com/jgdomingos" target="_blank"><i class="fa-brands fa-github iconPrimary" aria-hidden="true" style="font-size: 18px"></i> GitHub</a></li>
             </ul>
 
             <!-- Social media links -->
             <div class="socialIcons">
+                <button id="languageToggle" type="button">PT</button>
                 <a href="https://github.com/jgdomingos" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github iconPrimary"></i></a>
                 <a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in iconPrimary"></i></a>
                 <!-- From Uiverse.io by ilkhoeri --> 
@@ -104,8 +105,8 @@
 
             <!-- Name and position -->
             <div class="hero" data-aos="fade-right" data-aos-duration="800">
-                <h1>Hi, i'm <span class="brackets">João Guilherme</span>.<br>I'm a Fullstack Developer</h1>
-                <p>I build modern websites and web applications.</p>
+                <h1><span data-i18n="hero.greeting">Hi, i'm</span> <span class="brackets">João Guilherme</span>.<br><span data-i18n="hero.role">I'm a Fullstack Developer</span></h1>
+                <p data-i18n="hero.description">I build modern websites and web applications.</p>
 
                 <div class="socialIcons">
                     <a href="https://github.com/jgdomingos" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github iconPrimary"></i></a>
@@ -129,14 +130,14 @@
 
             <!-- About section content: intro text, description and actions -->
             <div class="infoAboutMe" data-aos="fade-right">
-                <h2><span class="brackets">&lt;</span>About Me<span class="brackets">&gt;</span></h2>
-                <h3>Hello, my name is <br>João Guilherme</h3>
-                <p>I am a Software Engineering student and developer driven by curiosity and the desire to turn ideas into real-world solutions. For me, programming goes beyond writing code: it is about solving problems, exploring possibilities, and building things that truly work. I am constantly learning, experimenting with new technologies, and developing projects to put my knowledge into practice. My goal is to keep growing, tackle new challenges, and build a career in technology through continuous learning and meaningful projects.</p>
+                <h2><span class="brackets">&lt;</span><span data-i18n="about.title">About Me</span><span class="brackets">&gt;</span></h2>
+                <h3><span data-i18n="about.greeting">Hello, my name is</span> <br>João Guilherme</h3>
+                <p data-i18n="about.description">I am a Software Engineering student and developer driven by curiosity and the desire to turn ideas into real-world solutions. For me, programming goes beyond writing code: it is about solving problems, exploring possibilities, and building things that truly work. I am constantly learning, experimenting with new technologies, and developing projects to put my knowledge into practice. My goal is to keep growing, tackle new challenges, and build a career in technology through continuous learning and meaningful projects.</p>
 
                 <!-- Download CV and Projects -->
                 <div>
-                    <a href="./assets/docs/Joao Guilherme Silva Domingos.pdf" class="btn" target="_blank">Download CV</a>
-                    <a href="#projects" class="btn">Projects</a>
+                    <a href="./assets/docs/Joao Guilherme Silva Domingos.pdf" class="btn" target="_blank" data-i18n="actions.downloadCv">Download CV</a>
+                    <a href="#projects" class="btn" data-i18n="actions.projects">Projects</a>
                 </div>
             </div>
 
@@ -151,7 +152,7 @@
                          </div>
      
                          <div>
-                             <p><strong>TOTAL PROJECTS</strong></p>
+                             <p><strong data-i18n="summary.projects">TOTAL PROJECTS</strong></p>
                              <img class="arrowIcon" src="./assets/images/icons/ArrowIcon.png" alt="">
                          </div>
                      </article>
@@ -166,7 +167,7 @@
                          </div>
      
                          <div>
-                             <p><strong>TOTAL CERTIFICATES</strong></p>
+                             <p><strong data-i18n="summary.certificates">TOTAL CERTIFICATES</strong></p>
                              <img class="arrowIcon" src="./assets/images/icons/ArrowIcon.png" alt="">
                          </div>
                      </article>
@@ -181,7 +182,7 @@
                          </div>
      
                          <div>
-                             <p><strong>EXPERIENCE</strong></p>
+                             <p><strong data-i18n="summary.experience">EXPERIENCE</strong></p>
                              <img class="arrowIcon" src="./assets/images/icons/ArrowIcon.png" alt="">
                          </div>
                      </article>
@@ -196,8 +197,8 @@
         <section id="skills">
 
             <!-- Skills introduction -->
-            <h2><span class="brackets">&lt;</span>Skills<span class="brackets">&gt;</span></h2>
-            <p>My tech stack consists of technologies that I use to create functional, well-structured solutions. I am constantly honing my skills, exploring new tools, and striving to improve both the quality of my code and my problem-solving approach.</p>
+            <h2><span class="brackets">&lt;</span><span data-i18n="skills.title">Skills</span><span class="brackets">&gt;</span></h2>
+            <p data-i18n="skills.description">My tech stack consists of technologies that I use to create functional, well-structured solutions. I am constantly honing my skills, exploring new tools, and striving to improve both the quality of my code and my problem-solving approach.</p>
 
             <!-- Skill cards -->
             <div class="skills">
@@ -289,8 +290,8 @@
         <!-- Projects -->
         <section id="projects">
             <!-- Projects introduction -->
-            <h2><span class="brackets">&lt;</span>Projects<span class="brackets">&gt;</span></h2>
-            <p>Some projects I’ve developed, putting into practice what I’ve been learning.</p>
+            <h2><span class="brackets">&lt;</span><span data-i18n="projects.title">Projects</span><span class="brackets">&gt;</span></h2>
+            <p data-i18n="projects.description">Some projects I’ve developed, putting into practice what I’ve been learning.</p>
 
             <!-- Project cards -->
             <div class="projectsCards">
@@ -301,8 +302,8 @@
                     <!-- Project Info -->
                     <div class="projectInfo">
                         <!-- Name and Summary -->
-                        <h3>Inventory Control</h3>
-                        <p>A complete CRUD system for managing store inventory, applying Object-Oriented Programming (OOP) fundamentals and software architecture in practice.</p>
+                        <h3 data-i18n="projects.inventory.title">Inventory Control</h3>
+                        <p data-i18n="projects.inventory.description">A complete CRUD system for managing store inventory, applying Object-Oriented Programming (OOP) fundamentals and software architecture in practice.</p>
                         <!-- Project Skills -->
                         <div class="skillsProjectList">
                             <span class="skillsProject">Java</span>
@@ -313,7 +314,7 @@
                         </div>
                         <!-- Link GitHub and Project -->
                         <div>
-                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7502845742156410880/" target="_blank">View</a>
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7502845742156410880/" target="_blank" data-i18n="actions.view">View</a>
                             <a href="https://github.com/jgdomingos/loja-pecas-java" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github iconPrimary" style="font-size: 18px"></i></a>
                         </div>
                     </div>
@@ -328,8 +329,8 @@
         <!-- Experiences -->
         <section id="experiences">
             <!-- Experience introduction -->
-            <h2><span class="brackets">&lt;</span>Experience<span class="brackets">&gt;</span></h2>
-            <p>A summary of my most relevant experiences, the companies I’ve worked for, and the practical impact of my work.</p>
+            <h2><span class="brackets">&lt;</span><span data-i18n="experience.title">Experience</span><span class="brackets">&gt;</span></h2>
+            <p data-i18n="experience.description">A summary of my most relevant experiences, the companies I’ve worked for, and the practical impact of my work.</p>
 
             <!-- Experience timeline for professional background -->
             <div class="timeline">
@@ -342,10 +343,10 @@
                         <img src="./assets/images/Work/Quarry.jpg" alt="PedraForte">
                     </div>
                     <!-- Position, company name and summary -->
-                    <p style="font-size: 12px;"><i>Position</i></p>
-                    <h3>Young Apprentice</h3>
+                    <p style="font-size: 12px;"><i data-i18n="experience.position">Position</i></p>
+                    <h3 data-i18n="experience.quarry.role">Young Apprentice</h3>
                     <h4>PedraForte Quarry</h4>
-                    <p>Managed inventory control and warehouse organization, focusing on standardizing records and improving processes. Identified and corrected duplicate codes, enhanced material requisition procedures, and created spreadsheets to track parts and components. Assisted in reconciling physical inventory with system records, contributing to data accuracy and operational efficiency.</p>
+                    <p data-i18n="experience.quarry.description">Managed inventory control and warehouse organization, focusing on standardizing records and improving processes. Identified and corrected duplicate codes, enhanced material requisition procedures, and created spreadsheets to track parts and components. Assisted in reconciling physical inventory with system records, contributing to data accuracy and operational efficiency.</p>
                 </article>
 
                 <!-- Paramount Textiles -->
@@ -356,10 +357,10 @@
                         <img src="./assets/images/Work/Paramount.jpg" alt="Paramount">
                     </div>
                     <!-- Position, company name and summary -->
-                    <p style="font-size: 12px;"><i>Position</i></p>
-                    <h3>PCP Intern</h3>
+                    <p style="font-size: 12px;"><i data-i18n="experience.position">Position</i></p>
+                    <h3 data-i18n="experience.paramount.role">PCP Intern</h3>
                     <h4>Paramount Textiles</h4>
-                    <p>Experience in production planning and control, focusing on data analysis and performance indicators. Development of Power BI dashboards to monitor material consumption, average yarn weight, and production variances. Extraction, processing, and validation of data from the TOTVS ERP system, contributing to data reliability and decision-making.</p>
+                    <p data-i18n="experience.paramount.description">Experience in production planning and control, focusing on data analysis and performance indicators. Development of Power BI dashboards to monitor material consumption, average yarn weight, and production variances. Extraction, processing, and validation of data from the TOTVS ERP system, contributing to data reliability and decision-making.</p>
                  </article>
 
             </div>
@@ -368,8 +369,8 @@
         <!-- Education -->
         <section id="education">
             <!-- Education introduction -->
-            <h2><span class="brackets">&lt;</span>Education<span class="brackets">&gt;</span></h2>
-            <p>My learning journey is built through a combination of academic education, specialized courses, and constant practice. Each experience contributes to expanding my knowledge, developing new skills, and preparing me for the challenges of the technology field.</p>
+            <h2><span class="brackets">&lt;</span><span data-i18n="education.title">Education</span><span class="brackets">&gt;</span></h2>
+            <p data-i18n="education.description">My learning journey is built through a combination of academic education, specialized courses, and constant practice. Each experience contributes to expanding my knowledge, developing new skills, and preparing me for the challenges of the technology field.</p>
 
             <!-- Education cards -->
             <div>
@@ -384,8 +385,8 @@
                     
                     <!-- Course overview -->
                     <div>
-                        <h4>Software Engineer</h4>
-                        <p>The Software Engineering degree program provides training focused on the creation, development, and maintenance of systems, covering everything from programming fundamentals to engineering concepts and project management. Throughout the course, I have developed skills in programming logic, Python, Java, Dart, Flutter, databases, agile methodologies, and software engineering, building a solid foundation for developing technological solutions.</p>
+                        <h4 data-i18n="education.umc.course">Software Engineer</h4>
+                        <p data-i18n="education.umc.description">The Software Engineering degree program provides training focused on the creation, development, and maintenance of systems, covering everything from programming fundamentals to engineering concepts and project management. Throughout the course, I have developed skills in programming logic, Python, Java, Dart, Flutter, databases, agile methodologies, and software engineering, building a solid foundation for developing technological solutions.</p>
                     </div>
 
                     <!-- Course Skills -->
@@ -399,7 +400,7 @@
 
                     <!-- Social -->
                     <div  class="social">
-                        <a href="https://www.umc.br/" target="_blank" class="visitSite">Visit Site <i class="fa-solid fa-arrow-up-right-from-square iconPrimary"></i></a>
+                        <a href="https://www.umc.br/" target="_blank" class="visitSite"><span data-i18n="actions.visitSite">Visit Site</span> <i class="fa-solid fa-arrow-up-right-from-square iconPrimary"></i></a>
                         <a href="https://www.linkedin.com/school/universidade-de-mogi-das-cruzes/home/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in iconPrimary" style="font-size: 18px"></i></a>
                     </div>
                 </article>
@@ -414,8 +415,8 @@
 
                     <!-- Course overview -->
                     <div>
-                        <h4>Full Stack Developer</h4>
-                        <p>OneBitCode’s Full Stack JavaScript program focuses on building complete applications, covering everything from programming fundamentals to the development of projects involving front-end, back-end, and databases. Throughout the course, I have been deepening my knowledge of JavaScript, TypeScript, React, Next.js, Node.js, PostgreSQL, and other technologies, putting what I learn into practice through real-world projects.</p>
+                        <h4 data-i18n="education.onebitcode.course">Full Stack Developer</h4>
+                        <p data-i18n="education.onebitcode.description">OneBitCode’s Full Stack JavaScript program focuses on building complete applications, covering everything from programming fundamentals to the development of projects involving front-end, back-end, and databases. Throughout the course, I have been deepening my knowledge of JavaScript, TypeScript, React, Next.js, Node.js, PostgreSQL, and other technologies, putting what I learn into practice through real-world projects.</p>
                     </div>
 
                     <!-- Course skills -->
@@ -427,8 +428,8 @@
 
                     <!-- Social -->
                      <div  class="social">
-                        <a href="educations.html" class="btnEducation">Certificates</a>
-                        <a href="https://onebitcode.com/?utm_source=google&utm_medium=cpc&utm_campaign=branded&utm_content=institucional&utm_source=google&utm_medium=cpc&utm_campaign=23724379896&utm_content=196607338953&utm_term=onebitcode&gad_source=1&gad_campaignid=23724379896&gbraid=0AAAAAC8sR416XvCLVSRxK58X7gF24uL4H&gclid=CjwKCAjwnvTUBhBoEiwAZNDxZ1EP2OJIG-q99gEVDAtcooMD5I3QN22mCyaAydFg-UaoZKlOGLzOJhoCb8wQAvD_BwE" target="_blank" class="visitSite">Visit Site <i class="fa-solid fa-arrow-up-right-from-square iconPrimary"></i></a>
+                        <a href="educations.html" class="btnEducation" data-i18n="actions.certificates">Certificates</a>
+                        <a href="https://onebitcode.com/?utm_source=google&utm_medium=cpc&utm_campaign=branded&utm_content=institucional&utm_source=google&utm_medium=cpc&utm_campaign=23724379896&utm_content=196607338953&utm_term=onebitcode&gad_source=1&gad_campaignid=23724379896&gbraid=0AAAAAC8sR416XvCLVSRxK58X7gF24uL4H&gclid=CjwKCAjwnvTUBhBoEiwAZNDxZ1EP2OJIG-q99gEVDAtcooMD5I3QN22mCyaAydFg-UaoZKlOGLzOJhoCb8wQAvD_BwE" target="_blank" class="visitSite"><span data-i18n="actions.visitSite">Visit Site</span> <i class="fa-solid fa-arrow-up-right-from-square iconPrimary"></i></a>
                         <a href="https://www.linkedin.com/school/onebitcode/home/" target="_blank" aria-label="linkedin"><i class="fa-brands fa-linkedin-in iconPrimary" style="font-size: 18px"></i></a>
                      </div>
                 </article>
@@ -443,8 +444,8 @@
 
                     <!-- Course overview -->
                     <div>
-                        <h4>English</h4>
-                        <p>Discover ON’s English training focuses on developing the four key language skills: speaking, listening, reading, and writing. Using a practical and interactive methodology, the course aims to build communication skills and fluency through activities, conversation practice, and real-life scenarios. The school also offers complementary experiences, such as classes with native-speaking instructors and activities designed for language practice.</p>
+                        <h4 data-i18n="education.discover.course">English</h4>
+                        <p data-i18n="education.discover.description">Discover ON’s English training focuses on developing the four key language skills: speaking, listening, reading, and writing. Using a practical and interactive methodology, the course aims to build communication skills and fluency through activities, conversation practice, and real-life scenarios. The school also offers complementary experiences, such as classes with native-speaking instructors and activities designed for language practice.</p>
                     </div>
 
                     <!-- Course skills -->
@@ -456,8 +457,8 @@
 
                     <!-- Social -->
                     <div  class="social">
-                        <a href="educations.html" class="btnEducation">Certificates</a>
-                        <a href="https://escoladiscover.com.br/" target="_blank" class="visitSite">Visit Site <i class="fa-solid fa-arrow-up-right-from-square iconPrimary"></i></a>
+                        <a href="educations.html" class="btnEducation" data-i18n="actions.certificates">Certificates</a>
+                        <a href="https://escoladiscover.com.br/" target="_blank" class="visitSite"><span data-i18n="actions.visitSite">Visit Site</span> <i class="fa-solid fa-arrow-up-right-from-square iconPrimary"></i></a>
                         <a href="https://www.linkedin.com/company/discoveron/home/" target="_blank" aria-label="linkedin"><i class="fa-brands fa-linkedin-in iconPrimary" style="font-size: 18px"></i></a>
                     </div>
                 </article>
@@ -472,8 +473,8 @@
 
                     <!-- Course overview -->
                     <div>
-                        <h4>English</h4>
-                        <p>Fluency Academy’s English program employs a methodology focused on practical, continuous language learning, combining lessons on grammar, pronunciation, comprehension, vocabulary, and conversation. The course also features memorization tools and access to native-speaking instructors, offering an experience that encourages the use of English from the initial levels through to more advanced content.</p>
+                        <h4 data-i18n="education.fluency.course">English</h4>
+                        <p data-i18n="education.fluency.description">Fluency Academy’s English program employs a methodology focused on practical, continuous language learning, combining lessons on grammar, pronunciation, comprehension, vocabulary, and conversation. The course also features memorization tools and access to native-speaking instructors, offering an experience that encourages the use of English from the initial levels through to more advanced content.</p>
                     </div>
 
                     <!-- Course Skills -->
@@ -485,23 +486,23 @@
 
                     <!-- Social -->
                     <div class="social">
-                        <a href="educations.html" class="btnEducation">Certificates</a>
-                        <a href="https://megahub.fluency.io/fa/primeira-turma/matriculas-geral" target="_blank" class="visitSite">Visit Site <i class="fa-solid fa-arrow-up-right-from-square iconPrimary"></i></a>
+                        <a href="educations.html" class="btnEducation" data-i18n="actions.certificates">Certificates</a>
+                        <a href="https://megahub.fluency.io/fa/primeira-turma/matriculas-geral" target="_blank" class="visitSite"><span data-i18n="actions.visitSite">Visit Site</span> <i class="fa-solid fa-arrow-up-right-from-square iconPrimary"></i></a>
                         <a href="https://www.linkedin.com/company/fluencyacademy/home/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in iconPrimary" style="font-size: 18px"></i></a>
                     </div>
                 </article>
 
             </div>
             <!-- Link to learn more -->
-            <a href="educations.html" class="seeMore">See more</a>
+            <a href="educations.html" class="seeMore" data-i18n="actions.seeMore">See more</a>
             
         </section>
 
         <!-- Contact -->
         <section id="contact">
             <!-- Contact introduction -->
-            <h2><span class="brackets">&lt;</span>Contact<span class="brackets">&gt;</span></h2>
-            <p>Got an opportunity, a project in mind, or just want to say hi? My inbox is open.</p>
+            <h2><span class="brackets">&lt;</span><span data-i18n="contact.title">Contact</span><span class="brackets">&gt;</span></h2>
+            <p data-i18n="contact.description">Got an opportunity, a project in mind, or just want to say hi? My inbox is open.</p>
 
             <!-- Contact cards -->
             <div class="contactGrid">
@@ -540,8 +541,8 @@
                     <div class="contactItem">
                         <i class="fa-solid fa-location-dot iconPrimary" aria-hidden="true"></i>
                         <div>
-                            <span>Location</span>
-                            <p>São Paulo - Sp · Open to remote, hybrid, and in-office work</p>
+                            <span data-i18n="contact.location">Location</span>
+                            <p data-i18n="contact.locationDescription">São Paulo - Sp · Open to remote, hybrid, and in-office work</p>
                         </div>
                     </div>
                 </div>
@@ -550,24 +551,24 @@
 
                     <!-- Name field -->
                     <div>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required placeholder="Your name">
+                        <label for="name" data-i18n="contact.name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name" data-i18n-placeholder="contact.namePlaceholder">
                     </div>
 
                     <!-- Email field -->
                     <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        <label for="email" data-i18n="contact.email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com" data-i18n-placeholder="contact.emailPlaceholder">
                     </div>
 
                     <!-- Message field -->
                      <div>
-                        <label for="message">Message:</label>
-                                <textarea id="message" name="message" rows="5" required placeholder="Tell me about the opportunity or project..."></textarea>
+                        <label for="message" data-i18n="contact.message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about the opportunity or project..." data-i18n-placeholder="contact.messagePlaceholder"></textarea>
                      </div>
 
                      <!-- Submit button -->
-                     <button type="submit" class="btn">Send Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+                     <button type="submit" class="btn"><span data-i18n="contact.send">Send Message</span> <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
                 </form>
 
             </div>
@@ -582,26 +583,26 @@
 
             <div data-aos="fade-up">
                 <p><span class="brackets">João Guilherme</span></p>
-                <p>Full Stack Developer</p>
+                <p data-i18n="footer.role">Full Stack Developer</p>
             </div>
 
             <!-- Quick Links -->
             <div data-aos="fade-up" data-aos-delay="100">
-                <p><strong><span class="brackets">&lt;</span>Quick Links<span class="brackets">&gt;</span></strong></p>
+                <p><strong><span class="brackets">&lt;</span><span data-i18n="footer.quickLinks">Quick Links</span><span class="brackets">&gt;</span></strong></p>
                 <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#aboutMe">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experiences">Experiences</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#aboutMe" data-i18n="nav.about">About Me</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#experiences" data-i18n="nav.experiences">Experiences</a></li>
+                    <li><a href="#education" data-i18n="nav.education">Education</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </div>
 
             <!-- Quick contact -->
             <div data-aos="fade-up" data-aos-delay="200">
-                <p><strong><span class="brackets">&lt;</span>Available for opportunities and projects<span class="brackets">&gt;</span></strong></p>
+                <p><strong><span class="brackets">&lt;</span><span data-i18n="footer.availability">Available for opportunities and projects</span><span class="brackets">&gt;</span></strong></p>
                 <ul>
                     <li><a href="mailto:jgsdomingoss@gmail.com">Email</a></li>
                     <li><a href="https://github.com/jgdomingos" target="_blank">GitHub</a></li>
@@ -613,7 +614,7 @@
 
         <!-- Rights -->
         <hr>
-        <p>&copy;2026 João GUilherme. Todos os direitos reservados.</p>
+        <p data-i18n="footer.copyright">&copy;2026 João Guilherme. All rights reserved.</p>
     </footer>
 
     <a href="#hero" class="btnTop" id="btnTop"><i class="fa-solid fa-angle-up"></i></a>

@@ -1,3 +1,41 @@
+const languageToggle = document.getElementById("languageToggle");
+
+async function changeLanguage(language) {
+  const response = await fetch(`./assets/translations/${language}.json`);
+  const translations = await response.json();
+
+  // Traduz textos normais
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.dataset.i18n;
+    element.textContent = translations[key] || key;
+  });
+
+  // Traduz placeholders dos inputs
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    const key = element.dataset.i18nPlaceholder;
+    element.placeholder = translations[key] || key;
+  });
+
+  document.documentElement.lang = language;
+  localStorage.setItem("language", language);
+
+  if (languageToggle) {
+    languageToggle.textContent = language === "pt" ? "EN" : "PT";
+  }
+}
+
+const savedLanguage = localStorage.getItem("language") || "en";
+changeLanguage(savedLanguage);
+
+if (languageToggle) {
+  languageToggle.addEventListener("click", () => {
+    const nextLanguage =
+      document.documentElement.lang === "pt" ? "en" : "pt";
+
+    changeLanguage(nextLanguage);
+  });
+}
+
 // Menu hambúrguer (mobile)
 const navToggle = document.getElementById("navToggle");
 const navMenu = document.getElementById("navMenu");

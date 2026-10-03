@@ -1,0 +1,73 @@
+{
+	"nav.home": "Home",
+	"nav.about": "About Me",
+	"nav.skills": "Skills",
+	"nav.projects": "Projects",
+	"nav.experiences": "Experiences",
+	"nav.education": "Education",
+	"nav.contact": "Contact",
+	"nav.curriculum": "Curriculum",
+
+	"hero.greeting": "Hi, I'm",
+	"hero.role": "I'm a Fullstack Developer",
+	"hero.description": "I build modern websites and web applications.",
+
+	"about.title": "About Me",
+	"about.greeting": "Hello, my name is",
+	"about.description": "I am a Software Engineering student and developer driven by curiosity and the desire to turn ideas into real-world solutions. For me, programming goes beyond writing code: it is about solving problems, exploring possibilities, and building things that truly work. I am constantly learning, experimenting with new technologies, and developing projects to put my knowledge into practice. My goal is to keep growing, tackle new challenges, and build a career in technology through continuous learning and meaningful projects.",
+
+	"actions.downloadCv": "Download CV",
+	"actions.projects": "Projects",
+	"actions.view": "View",
+	"actions.visitSite": "Visit Site",
+	"actions.certificates": "Certificates",
+	"actions.seeMore": "See more",
+
+	"summary.projects": "TOTAL PROJECTS",
+	"summary.certificates": "TOTAL CERTIFICATES",
+	"summary.experience": "EXPERIENCE",
+
+	"skills.title": "Skills",
+	"skills.description": "My tech stack consists of technologies that I use to create functional, well-structured solutions. I am constantly honing my skills, exploring new tools, and striving to improve both the quality of my code and my problem-solving approach.",
+
+	"projects.title": "Projects",
+	"projects.description": "Some projects I've developed, putting into practice what I've been learning.",
+	"projects.inventory.title": "Inventory Control",
+	"projects.inventory.description": "A complete CRUD system for managing store inventory, applying Object-Oriented Programming (OOP) fundamentals and software architecture in practice.",
+
+	"experience.title": "Experience",
+	"experience.description": "A summary of my most relevant experiences, the companies I've worked for, and the practical impact of my work.",
+	"experience.position": "Position",
+	"experience.quarry.role": "Young Apprentice",
+	"experience.quarry.description": "Managed inventory control and warehouse organization, focusing on standardizing records and improving processes. Identified and corrected duplicate codes, enhanced material requisition procedures, and created spreadsheets to track parts and components. Assisted in reconciling physical inventory with system records, contributing to data accuracy and operational efficiency.",
+	"experience.paramount.role": "PCP Intern",
+	"experience.paramount.description": "Experience in production planning and control, focusing on data analysis and performance indicators. Development of Power BI dashboards to monitor material consumption, average yarn weight, and production variances. Extraction, processing, and validation of data from the TOTVS ERP system, contributing to data reliability and decision-making.",
+
+	"education.title": "Education",
+	"education.description": "My learning journey is built through a combination of academic education, specialized courses, and constant practice. Each experience contributes to expanding my knowledge, developing new skills, and preparing me for the challenges of the technology field.",
+	"education.umc.course": "Software Engineering",
+	"education.umc.description": "The Software Engineering degree program provides training focused on the creation, development, and maintenance of systems, covering everything from programming fundamentals to engineering concepts and project management. Throughout the course, I have developed skills in programming logic, Python, Java, Dart, Flutter, databases, agile methodologies, and software engineering, building a solid foundation for developing technological solutions.",
+	"education.onebitcode.course": "Full Stack Developer",
+	"education.onebitcode.description": "OneBitCode's Full Stack JavaScript program focuses on building complete applications, covering everything from programming fundamentals to the development of projects involving front-end, back-end, and databases. Throughout the course, I have been deepening my knowledge of JavaScript, TypeScript, React, Next.js, Node.js, PostgreSQL, and other technologies, putting what I learn into practice through real-world projects.",
+	"education.discover.course": "English",
+	"education.discover.description": "Discover ON's English training focuses on developing the four key language skills: speaking, listening, reading, and writing. Using a practical and interactive methodology, the course aims to build communication skills and fluency through activities, conversation practice, and real-life scenarios. The school also offers complementary experiences, such as classes with native-speaking instructors and activities designed for language practice.",
+	"education.fluency.course": "English",
+	"education.fluency.description": "Fluency Academy's English program employs a methodology focused on practical, continuous language learning, combining lessons on grammar, pronunciation, comprehension, vocabulary, and conversation. The course also features memorization tools and access to native-speaking instructors, offering an experience that encourages the use of English from the initial levels through to more advanced content.",
+
+	"contact.title": "Contact",
+	"contact.description": "Got an opportunity, a project in mind, or just want to say hi? My inbox is open.",
+	"contact.location": "Location",
+	"contact.locationDescription": "São Paulo - SP · Open to remote, hybrid, and in-office work",
+	"contact.name": "Name:",
+	"contact.namePlaceholder": "Your name",
+	"contact.email": "Email:",
+	"contact.emailPlaceholder": "your@email.com",
+	"contact.message": "Message:",
+	"contact.messagePlaceholder": "Tell me about the opportunity or project...",
+	"contact.send": "Send Message",
+
+	"footer.role": "Full Stack Developer",
+	"footer.quickLinks": "Quick Links",
+	"footer.availability": "Available for opportunities and projects",
+	"footer.copyright": "©2026 João Guilherme. All rights reserved."
+}

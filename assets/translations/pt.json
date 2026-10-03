@@ -1,0 +1,73 @@
+{
+    "nav.home": "Início",
+    "nav.about": "Sobre mim",
+    "nav.skills": "Habilidades",
+    "nav.projects": "Projetos",
+    "nav.experiences": "Experiências",
+    "nav.education": "Formação",
+    "nav.contact": "Contato",
+    "nav.curriculum": "Currículo",
+
+    "hero.greeting": "Olá, eu sou",
+    "hero.role": "Sou desenvolvedor Fullstack",
+    "hero.description": "Crio sites e aplicações web modernas.",
+
+    "about.title": "Sobre mim",
+    "about.greeting": "Olá, meu nome é",
+    "about.description": "Sou estudante de Engenharia de Software e desenvolvedor movido pela curiosidade e pelo desejo de transformar ideias em soluções reais. Para mim, programar vai além de escrever código: é resolver problemas, explorar possibilidades e construir coisas que realmente funcionam. Estou sempre aprendendo, experimentando novas tecnologias e desenvolvendo projetos para colocar meu conhecimento em prática. Meu objetivo é continuar crescendo, enfrentar novos desafios e construir uma carreira em tecnologia por meio de aprendizado contínuo e projetos relevantes.",
+
+    "actions.downloadCv": "Baixar currículo",
+    "actions.projects": "Projetos",
+    "actions.view": "Ver",
+    "actions.visitSite": "Visitar site",
+    "actions.certificates": "Certificados",
+    "actions.seeMore": "Ver mais",
+
+    "summary.projects": "TOTAL DE PROJETOS",
+    "summary.certificates": "TOTAL DE CERTIFICADOS",
+    "summary.experience": "EXPERIÊNCIA",
+
+    "skills.title": "Habilidades",
+    "skills.description": "Minha stack é formada por tecnologias que uso para criar soluções funcionais e bem estruturadas. Estou sempre aprimorando minhas habilidades, explorando novas ferramentas e buscando melhorar a qualidade do meu código e da minha capacidade de resolver problemas.",
+
+    "projects.title": "Projetos",
+    "projects.description": "Alguns projetos que desenvolvi, colocando em prática o que venho aprendendo.",
+    "projects.inventory.title": "Controle de estoque",
+    "projects.inventory.description": "Um sistema CRUD completo para gerenciar o estoque de uma loja, aplicando na prática fundamentos de Programação Orientada a Objetos e arquitetura de software.",
+
+    "experience.title": "Experiência",
+    "experience.description": "Um resumo das minhas experiências mais relevantes, das empresas em que trabalhei e do impacto prático do meu trabalho.",
+    "experience.position": "Cargo",
+    "experience.quarry.role": "Jovem aprendiz",
+    "experience.quarry.description": "Atuei no controle de estoque e na organização do almoxarifado, com foco na padronização de registros e na melhoria de processos. Identifiquei e corrigi códigos duplicados, aprimorei procedimentos de requisição de materiais e criei planilhas para acompanhar peças e componentes. Também auxiliei na conciliação entre o estoque físico e os registros do sistema, contribuindo para a precisão dos dados e a eficiência operacional.",
+    "experience.paramount.role": "Estagiário de PCP",
+    "experience.paramount.description": "Experiência em planejamento e controle da produção, com foco em análise de dados e indicadores de desempenho. Desenvolvimento de dashboards no Power BI para monitorar o consumo de materiais, o peso médio dos fios e as variações da produção. Extração, processamento e validação de dados do sistema ERP TOTVS, contribuindo para a confiabilidade das informações e a tomada de decisões.",
+
+    "education.title": "Formação",
+    "education.description": "Minha trajetória de aprendizado é construída por uma combinação de formação acadêmica, cursos especializados e prática constante. Cada experiência contribui para ampliar meus conhecimentos, desenvolver novas habilidades e me preparar para os desafios da área de tecnologia.",
+    "education.umc.course": "Engenharia de Software",
+    "education.umc.description": "O curso de Engenharia de Software oferece uma formação voltada à criação, ao desenvolvimento e à manutenção de sistemas, abrangendo desde fundamentos de programação até conceitos de engenharia e gerenciamento de projetos. Ao longo do curso, desenvolvi habilidades em lógica de programação, Python, Java, Dart, Flutter, bancos de dados, metodologias ágeis e engenharia de software, construindo uma base sólida para desenvolver soluções tecnológicas.",
+    "education.onebitcode.course": "Desenvolvedor Full Stack",
+    "education.onebitcode.description": "O programa Full Stack JavaScript da OneBitCode é focado na construção de aplicações completas, abrangendo desde fundamentos de programação até o desenvolvimento de projetos envolvendo front-end, back-end e bancos de dados. Ao longo do curso, venho aprofundando meus conhecimentos em JavaScript, TypeScript, React, Next.js, Node.js, PostgreSQL e outras tecnologias, colocando o aprendizado em prática em projetos reais.",
+    "education.discover.course": "Inglês",
+    "education.discover.description": "O treinamento de inglês da Discover ON é focado no desenvolvimento das quatro principais habilidades do idioma: fala, escuta, leitura e escrita. Com uma metodologia prática e interativa, o curso busca desenvolver a comunicação e a fluência por meio de atividades, conversação e situações reais. A escola também oferece experiências complementares, como aulas com professores nativos e atividades voltadas à prática do idioma.",
+    "education.fluency.course": "Inglês",
+    "education.fluency.description": "O programa de inglês da Fluency Academy utiliza uma metodologia focada no aprendizado prático e contínuo, combinando aulas de gramática, pronúncia, compreensão, vocabulário e conversação. O curso também conta com ferramentas de memorização e acesso a professores nativos, oferecendo uma experiência que incentiva o uso do inglês desde os níveis iniciais até os mais avançados.",
+
+    "contact.title": "Contato",
+    "contact.description": "Tem uma oportunidade, um projeto em mente ou só quer dizer oi? Minha caixa de entrada está aberta.",
+    "contact.location": "Localização",
+    "contact.locationDescription": "São Paulo - SP · Disponível para trabalho remoto, híbrido e presencial",
+    "contact.name": "Nome:",
+    "contact.namePlaceholder": "Seu nome",
+    "contact.email": "E-mail:",
+    "contact.emailPlaceholder": "seu@email.com",
+    "contact.message": "Mensagem:",
+    "contact.messagePlaceholder": "Conte-me sobre a oportunidade ou projeto...",
+    "contact.send": "Enviar mensagem",
+    
+    "footer.role": "Desenvolvedor Full Stack",
+    "footer.quickLinks": "Links rápidos",
+    "footer.availability": "Disponível para oportunidades e projetos",
+    "footer.copyright": "©2026 João Guilherme. Todos os direitos reservados."
+}
