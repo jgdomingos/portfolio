@@ -1,6 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-primary);
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: move-grid 20s linear infinite;
+  background-color: var(--color-background);
+  background-image:
+    linear-gradient(rgba(126, 224, 195, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(126, 224, 195, 0.035) 1px, transparent 1px);
+  background-size: 45px 45px;
+  color: var(--color-text);
+}
+
+body::before {
+  aspect-ratio: 1;
+  background: radial-gradient(circle, rgba(126, 224, 195, 0.14), transparent 68%);
+  content: "";
+  left: 50%;
+  pointer-events: none;
+  position: fixed;
+  top: 10vh;
+  transform: translateX(-50%);
+  width: min(72vw, 900px);
+  z-index: 0;
+}
+
+header {
+  position: relative;
+  z-index: 2;
+}
+
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  overflow-x: clip;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text);
+}
+
+/* Footer */
+
+#footer {
+  background-color: var(--color-border);
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+#footer::before {
+  background: linear-gradient(90deg, transparent, var(--color-primary) 25%, var(--color-primary) 75%, transparent);
+  border-radius: 1.5px;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.footerGrid {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.footerGrid ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  margin-top: 0.8rem;
+  padding: 0;
+}
+
+.footerGrid ul li a {
+  color: rgba(232, 236, 241, 0.86);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footerGrid ul li a:hover {
+  color: var(--color-primary);
+}
+
+footer > p {
+  text-align: center;
 }
