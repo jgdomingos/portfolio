@@ -61,6 +61,45 @@ if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
+// Certificate carousels
+document.querySelectorAll(".certCarousel").forEach((carousel) => {
+  const track = carousel.querySelector(".certTrack");
+  const slides = carousel.querySelectorAll(".certSlide");
+  const previousButton = carousel.querySelector(".certPrev");
+  const nextButton = carousel.querySelector(".certNext");
+  const dots = carousel.querySelector(".certDots");
+  let currentSlide = 0;
+
+  if (!track || !slides.length || !previousButton || !nextButton || !dots) {
+    return;
+  }
+
+  const updateCarousel = (slideIndex) => {
+    currentSlide = (slideIndex + slides.length) % slides.length;
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    previousButton.disabled = slides.length < 2;
+    nextButton.disabled = slides.length < 2;
+
+    dots.querySelectorAll(".certDot").forEach((dot, index) => {
+      dot.classList.toggle("active", index === currentSlide);
+      dot.setAttribute("aria-current", index === currentSlide ? "true" : "false");
+    });
+  };
+
+  slides.forEach((_, index) => {
+    const dot = document.createElement("button");
+    dot.className = "certDot";
+    dot.type = "button";
+    dot.setAttribute("aria-label", `Go to certificate ${index + 1}`);
+    dot.addEventListener("click", () => updateCarousel(index));
+    dots.appendChild(dot);
+  });
+
+  previousButton.addEventListener("click", () => updateCarousel(currentSlide - 1));
+  nextButton.addEventListener("click", () => updateCarousel(currentSlide + 1));
+  updateCarousel(0);
+});
+
 // Formulário de contato -> abre o cliente de e-mail do visitante já preenchido
 // (sem back-end. Para não depender do cliente de e-mail, troque por Formspree/EmailJS/Web3Forms)
 const contactForm = document.getElementById("contactForm");
@@ -87,18 +126,20 @@ if (contactForm) {
 // Button to return to the top
 const btnTop = document.getElementById('btnTop');
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    btnTop.classList.add('active');
-  } else {
-    btnTop.classList.remove('active');
-  }
-});
-
-btnTop.addEventListener('click', (e) => {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
+if (btnTop) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      btnTop.classList.add('active');
+    } else {
+      btnTop.classList.remove('active');
+    }
   });
-});
+
+  btnTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}

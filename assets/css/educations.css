@@ -48,6 +48,233 @@ main {
   overflow-x: clip;
 }
 
+#hero,
+#umc,
+#oneBitCode,
+#discover,
+#fluency,
+#footer {
+  padding: 0 clamp(1.5rem, 6vw, 14rem);
+}
+
+#hero {
+  padding-top: 10rem;
+}
+
+hr {
+  background: linear-gradient(90deg, transparent, var(--color-primary) 25%, var(--color-primary) 75%, transparent);
+  border: none;
+  border-radius: 1.5px;
+  height: 3px;
+  margin: 0 auto;
+  width: 70%;
+}
+
+/* Navigation */
+nav {
+  align-items: center;
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  margin: 0;
+  padding: 1.3rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav::after {
+  background: linear-gradient(90deg, transparent, var(--color-primary) 25%, var(--color-primary) 75%, transparent);
+  border-radius: 1.5px;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+  color: var(--color-primary);
+}
+
+nav ul .mobileOnly a {
+  align-items: center;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  color: var(--color-primary);
+  cursor: pointer;
+  display: none;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+/* Social links and CV download icon */
+.socialIcons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.socialIcons a {
+  color: var(--color-primary);
+  transition: transform 0.3s ease;
+}
+
+.socialIcons a:hover {
+  transform: scale(1.2);
+}
+
+.iconPrimary {
+  color: var(--color-primary);
+}
+
+.fa-github,
+.fa-linkedin-in,
+.fa-file-arrow-down {
+  font-size: 30px;
+}
+
+/* Certificate carousels */
+
+.certCarousel {
+  margin-top: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.certTrack {
+  display: flex;
+  transition: transform 0.35s ease;
+}
+
+.certSlide {
+  align-items: center;
+  background: rgba(9, 9, 9, 0.52);
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  gap: 0.65rem;
+  justify-content: center;
+  min-height: 180px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.certSlide img {
+  border-radius: 4px;
+  display: block;
+  max-height: 360px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.certSlide i {
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+
+.certSlide p {
+  font-size: 0.95rem;
+}
+
+.certSlide small {
+  color: rgba(232, 236, 241, 0.62);
+  font-size: 0.7rem;
+  overflow-wrap: anywhere;
+}
+
+.certPrev,
+.certNext {
+  align-items: center;
+  background: var(--color-border);
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  color: var(--color-primary);
+  cursor: pointer;
+  display: flex;
+  height: 2.2rem;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  width: 2.2rem;
+  z-index: 1;
+}
+
+.certPrev {
+  left: 0.75rem;
+}
+
+.certNext {
+  right: 0.75rem;
+}
+
+.certPrev:hover,
+.certNext:hover,
+.certPrev:focus-visible,
+.certNext:focus-visible {
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+
+.certPrev:disabled,
+.certNext:disabled {
+  cursor: default;
+  opacity: 0.35;
+}
+
+.certDots {
+  display: flex;
+  gap: 0.45rem;
+  justify-content: center;
+  margin-top: 0.85rem;
+}
+
+.certDot {
+  background: rgba(232, 236, 241, 0.35);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 0.55rem;
+  padding: 0;
+  width: 0.55rem;
+}
+
+.certDot.active,
+.certDot:hover,
+.certDot:focus-visible {
+  background: var(--color-primary);
+}
+
 /* Scrollbar */
 
 ::-webkit-scrollbar {
