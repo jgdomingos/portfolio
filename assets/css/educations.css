@@ -53,12 +53,15 @@ main {
 #oneBitCode,
 #discover,
 #fluency,
-#footer {
+footer {
   padding: 0 clamp(1.5rem, 6vw, 14rem);
 }
 
-#hero {
-  padding-top: 10rem;
+#umc,
+#oneBitCode,
+#discover,
+#fluency {
+  margin-bottom: clamp(4rem, 10vw, 8rem);
 }
 
 hr {
@@ -158,6 +161,83 @@ nav ul .mobileOnly a {
 .fa-linkedin-in,
 .fa-file-arrow-down {
   font-size: 30px;
+}
+
+/* Hero section */
+
+#hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 5.75rem;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+#hero a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+#hero a:hover {
+  text-decoration: underline;
+}
+
+#umc > div,
+#oneBitCode > div,
+#discover > div,
+#fluency > div {
+  align-items: start;
+  column-gap: clamp(2rem, 5vw, 6rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.8fr);
+}
+
+#umc > div > .certCarousel,
+#oneBitCode > div > .certCarousel,
+#discover > div > .certCarousel,
+#fluency > div > .certCarousel {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  margin-top: 0;
+}
+
+#umc > div > p,
+#oneBitCode > div > p,
+#discover > div > p,
+#fluency > div > p {
+  margin-bottom: 1.25rem;
+  text-align: justify;
+}
+
+/* Section schools */
+.school {
+  display: flex;
+  gap: 15px;
+}
+
+.school img {
+  border-radius: 5px;
+  width: 50px;
+}
+
+.schoolInfo {
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+}
+.schoolInfo2 {
+  background-color: rgba(126, 224, 195, 0.12);
+  border-radius: 5px;
+  color: var(--color-primary);
+  padding: 0.15rem 0.35rem;
+}
+
+.skillsEducation {
+  background-color: rgba(126, 224, 195, 0.12);
+  border-radius: 5px;
+  color: var(--color-primary);
+  padding: 0.15rem 0.35rem;
 }
 
 /* Certificate carousels */
@@ -294,15 +374,20 @@ nav ul .mobileOnly a {
   background: var(--color-text);
 }
 
+.brackets,
+.iconPrimary {
+  color: var(--color-primary);
+}
+
 /* Footer */
 
-#footer {
+footer {
   background-color: var(--color-border);
   padding-bottom: 1.5rem;
   position: relative;
 }
 
-#footer::before {
+footer::before {
   background: linear-gradient(90deg, transparent, var(--color-primary) 25%, var(--color-primary) 75%, transparent);
   border-radius: 1.5px;
   content: "";
@@ -341,4 +426,58 @@ nav ul .mobileOnly a {
 
 footer > p {
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .footerGrid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .mobileOnly {
+    display: list-item;
+  }
+
+  nav > .socialIcons {
+    display: none;
+  }
+
+  nav ul {
+    background-color: var(--color-background);
+    border: var(--border);
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: min(18rem, 100%);
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  #umc > div,
+  #oneBitCode > div,
+  #discover > div,
+  #fluency > div {
+    grid-template-columns: 1fr;
+  }
+
+  #umc > div > .certCarousel,
+  #oneBitCode > div > .certCarousel,
+  #discover > div > .certCarousel,
+  #fluency > div > .certCarousel {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 1.5rem;
+  }
 }
