@@ -77,6 +77,13 @@
     content: "> ";
 }
 
+#pedraForte > .experienceLayout > div:not(.work):not(.workInfo):not(.workSnapshot),
+#paramount > .experienceLayout > div:not(.work):not(.workInfo):not(.workSnapshot) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
 .workSnapshot h3 {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;

@@ -215,6 +215,18 @@ nav ul .mobileOnly a {
 	color: var(--color-background);
 }
 
+.workInfo,
+.schoolInfo {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.workInfo2,
+.schoolInfo2 {
+	white-space: nowrap;
+}
+
 /* btn Back Top */
 .btnTop {
   align-items: center;

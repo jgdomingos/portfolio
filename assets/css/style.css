@@ -303,9 +303,8 @@
 
 .skillsProjectList {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
-  overflow-x: auto;
-  white-space: nowrap;
 }
 
 /* Experience timeline */
@@ -474,6 +473,12 @@
 
 .cardSchool h4 + p {
   margin-top: 0.6rem;
+}
+
+#education .cardSchool > div:nth-of-type(3) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .cardSchool:hover {
