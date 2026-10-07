@@ -38,6 +38,22 @@ header {
   z-index: 2;
 }
 
+.skip-link {
+  background: var(--color-primary);
+  color: var(--color-background);
+  left: 0.75rem;
+  padding: 0.65rem 1rem;
+  position: fixed;
+  top: 0.75rem;
+  transform: translateY(-200%);
+  transition: transform 0.2s ease;
+  z-index: 1001;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 main,
 footer {
   position: relative;
