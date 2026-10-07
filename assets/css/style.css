@@ -643,32 +643,6 @@
   transform: translateX(4px);
 }
 
-.btnTop {
-  align-items: center;
-  background-color: var(--color-primary);
-  bottom: 30px;
-  color: var(--color-background);
-  display: flex;
-  justify-content: center;
-  opacity: 0;
-  padding: 0.5rem;
-  position: fixed;
-  right: 30px;
-  text-decoration: none;
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s;
-  visibility: hidden;
-  z-index: 9999;
-}
-
-.btnTop.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.btnTop:hover {
-  transform: scale(1.1);
-}
-
 /* Animations */
 
 @keyframes has-saved {
