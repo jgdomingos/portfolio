@@ -1,0 +1,29 @@
+#hero,
+#pedraForte,
+#paramount {
+    padding: 0 clamp(1.5rem, 6vw, 14rem);
+}
+
+#pedraForte,
+#paramount {
+    margin-bottom: clamp(4rem, 10vw, 8rem);
+}
+
+#hero {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 5.75rem;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+#hero a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+#hero a:hover {
+    text-decoration: underline;
+}

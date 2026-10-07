@@ -51,6 +51,128 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <p><strong><span class="brackets">João Guilherme</span> | .Dev</strong></p>
+
+            <!-- Mobile hamburger menu -->
+            <button id="navToggle" class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+
+            <ul id="navMenu">
+                <li><a href="./index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="">PedraForte Quarry</a></li>
+                <li><a href="">Paramount Textiles</a></li>
+                <!-- Apenas em versões mobile -->
+                <hr class="mobileOnly">
+                <li class="mobileOnly"><a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank"><i class="fa-brands fa-linkedin-in iconPrimary" aria-hidden="true" style="font-size: 18px"></i> LinkedIn</a></li>
+                <li class="mobileOnly"><a href="https://github.com/jgdomingos" target="_blank"><i class="fa-brands fa-github iconPrimary" aria-hidden="true" style="font-size: 18px"></i> GitHub</a></li>
+            </ul>
+
+            <div class="socialIcons">
+                <button id="languageToggle" type="button" aria-label="Change language" title="Change language">PT</button>
+                <a href="https://github.com/jgdomingos" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github iconPrimary"></i></a>
+                <a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in iconPrimary"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content" tabindex="-1">
+
+        <!-- Hero -->
+        <section id="hero">
+            <a href="./index.html" data-aos="fade-down" data-i18n="education.backToPortfolio">Back to portfolio</a>
+            <h1 data-aos="fade-up"><spacn class="brackets">&lt;</spacn><span data-i18n="education.pageTitle">Experience</span><span class="brackets">&gt;</span></h1>
+            <p data-aos="fade-up" data-aos-delay="100" data-i18n="education.pageDescription">Companies I've worked for, what my role involved, and the practical impact of the work.</p>
+        </section>
+
+        <!-- PedraForte Quarry -->
+         <section id="pedraForte">
+
+            <div data-aos="fade-up">
+
+                <div class="work">
+                    <img src="./assets/images/Work/Quarry.jpg" alt="PedraForte">
+                    <div>
+                        <h2>PedraForte Quarry</h2>
+                        <p class="brackets">Young Apprentice</p>
+                    </div>
+                </div>
+
+                <div class="workInfo">
+                    <span class="workInfo2">Completed</span>
+                    <span class="workInfo2">Young Apprentice</span>
+                    <span class="workInfo2"><i class="fa-regular fa-calendar"></i> 08/2025 - 02/2026</span>
+                </div>
+
+                <p></p>
+
+            </div>
+
+         </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerGrid">
+
+            <div data-aos="fade-up">
+                <p><span class="brackets">João Guilherme</span></p>
+                <p data-i18n="footer.role">Full Stack Developer</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div data-aos="fade-up" data-aos-delay="100">
+                <p><strong><span class="brackets">&lt;</span><span data-i18n="footer.quickLinks">Quick Links</span><span class="brackets">&gt;</span></strong></p>
+                <ul>
+                    <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#aboutMe" data-i18n="nav.about">About Me</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#experiences" data-i18n="nav.experiences">Experiences</a></li>
+                    <li><a href="#education" data-i18n="nav.education">Education</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick contact -->
+            <div data-aos="fade-up" data-aos-delay="200">
+                <p><strong><span class="brackets">&lt;</span><span data-i18n="footer.availability">Available for opportunities and projects</span><span class="brackets">&gt;</span></strong></p>
+                <ul>
+                    <li><a href="mailto:jgsdomingoss@gmail.com">Email</a></li>
+                    <li><a href="https://github.com/jgdomingos" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Rights -->
+        <hr>
+        <br>
+        <p data-i18n="footer.copyright">&copy;2026 João Guilherme. All rights reserved.</p>
+    </footer>
+
+    <a href="#hero" class="btnTop" id="btnTop"><i class="fa-solid fa-angle-up"></i></a>
+
+    <script src="./assets/js/script.js"></script>
+
+    <!-- AOS Animated -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            easing: "ease-out-cubic",
+            offset: 80,
+            once: true,
+            anchorPlacement: "top-bottom",
+            disable: () => window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        });
+    </script>
     
 </body>
 </html>
