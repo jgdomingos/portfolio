@@ -143,3 +143,17 @@ if (btnTop) {
     });
   });
 }
+
+// Center navigation in the middle of the screen
+window.addEventListener("load", () => {
+            const sectionId = window.location.hash.slice(1);
+            const section = sectionId ? document.getElementById(sectionId) : null;
+            const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+            if (section) {
+                section.scrollIntoView({
+                    behavior: prefersReducedMotion ? "auto" : "smooth",
+                    block: "center"
+                });
+            }
+        });
