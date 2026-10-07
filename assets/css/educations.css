@@ -76,13 +76,6 @@
   margin-bottom: 1.25rem;
   margin-top: 1.25rem;
 }
-.schoolInfo2 {
-  background-color: rgba(126, 224, 195, 0.12);
-  border-radius: 5px;
-  color: var(--color-primary);
-  padding: 0.15rem 0.35rem;
-}
-
 .skillsEducation {
   background-color: rgba(126, 224, 195, 0.12);
   border-radius: 5px;

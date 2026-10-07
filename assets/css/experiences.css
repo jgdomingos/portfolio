@@ -50,6 +50,21 @@
     padding: 1.5rem;
 }
 
+.work {
+    display: flex;
+    gap: 15px;
+}
+
+.work img {
+    border-radius: 5px;
+    width: 50px;
+}
+
+.workInfo {
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+}
+
 #pedraForte > .experienceLayout > ul,
 #paramount > .experienceLayout > ul {
     list-style: none;
@@ -91,16 +106,6 @@
 .workSnapshot li::before {
     color: var(--color-primary);
     content: "> ";
-}
-
-.work {
-    display: flex;
-    gap: 15px;
-}
-
-.work img {
-    border-radius: 5px;
-    width: 50px;
 }
 
 .skillsWork {
