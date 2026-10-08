@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+
+main {
+    padding: 0 clamp(1.5rem, 6vw, 14rem);
+    text-align: center;
+    width: min(100%, 50rem);
+}
+
+main h1 {
+   color: var(--color-primary);
+   text-align: center;
+   font-size: clamp(4rem, 15vw, 6.25rem);
+}
+
+main a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
