@@ -338,6 +338,13 @@ footer > p {
 	}
 
 	nav > .socialIcons {
+		display: flex;
+		gap: 0;
+		margin-top: 0;
+		order: 1;
+	}
+
+	nav > .socialIcons a {
 		display: none;
 	}
 
@@ -360,6 +367,7 @@ footer > p {
 
 	.nav-toggle {
 		display: block;
+		order: 2;
 	}
 }
 
