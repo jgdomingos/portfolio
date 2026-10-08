@@ -347,6 +347,10 @@
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
+.timeLineItem a{
+  text-decoration: none;
+}
+
 .timeLineItem h3,
 .timeLineItem h4,
 .cardSchool h3,
