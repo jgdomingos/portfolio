@@ -165,19 +165,19 @@
                 <div class="certCarousel" aria-label="OneBitCode certificates">
                     <div class="certTrack">
                         <div class="certSlide">
-                            <i class="fa-solid fa-award" aria-hidden="true"></i>
-                            <p data-i18n="certificate.addFirst">Add your first certificate here</p>
-                            <small>./assets/images/Certificates/onebitcode-1.jpg</small>
+                            <button class="certificateButton" type="button" data-certificate="./assets/docs/Certificates/OneBitCode/HTML5-OneBitCode.pdf" aria-label="Open HTML5 certificate">
+                                <img src="./assets/images/Certificates/HTML5-OneBitCode.png" alt="Certificado HTML5 - OneBitCode">
+                            </button>
                         </div>
                         <div class="certSlide">
-                            <i class="fa-solid fa-award" aria-hidden="true"></i>
-                            <p data-i18n="certificate.addSecond">Add your second certificate here</p>
-                            <small>./assets/images/Certificates/onebitcode-2.jpg</small>
+                            <button class="certificateButton" type="button" data-certificate="./assets/docs/Certificates/OneBitCode/CSS3-OneBitCode.pdf" aria-label="Open CSS3 certificate">
+                                <img src="./assets/images/Certificates/CSS3-OneBitCode.png" alt="Certificado CSS3 - OneBitCode">
+                            </button>
                         </div>
                         <div class="certSlide">
-                            <i class="fa-solid fa-award" aria-hidden="true"></i>
-                            <p data-i18n="certificate.addThird">Add your third certificate here</p>
-                            <small>./assets/images/Certificates/onebitcode-3.jpg</small>
+                            <button class="certificateButton" type="button" data-certificate="./assets/docs/Certificates/OneBitCode/JavaScript-I-Fundamentos-OneBitCode.pdf" aria-label="Open JavaScript certificate">
+                                <img src="./assets/images/Certificates/JavaScript-I-Fundamentos-OneBitCode.png" alt="Certificado JavaScript I - Fundamentos - OneBitCode">
+                            </button>
                         </div>
                     </div>
                     <button class="certPrev" type="button" aria-label="Previous OneBitCode certificate"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
@@ -217,9 +217,19 @@
                 <div class="certCarousel" aria-label="Discover School certificates">
                     <div class="certTrack">
                         <div class="certSlide">
-                            <i class="fa-solid fa-award" aria-hidden="true"></i>
-                            <p data-i18n="certificate.addCertificate">Add your certificate here</p>
-                            <small>./assets/images/Certificates/discover-1.jpg</small>
+                            <button class="certificateButton" type="button" data-certificate="./assets/docs/Certificates/Discover/Certificado Ingles 1.pdf" aria-label="Open English 1 certificate">
+                                <img src="./assets/images/Certificates/Ingles1-Discover.png" alt="Certificado de Inglês 1 - Discover">
+                            </button>
+                        </div>
+                        <div class="certSlide">
+                            <button class="certificateButton" type="button" data-certificate="./assets/docs/Certificates/Discover/Certificado Ingles 2.pdf" aria-label="Open English 2 certificate">
+                                <img src="./assets/images/Certificates/Ingles2-Discover.png" alt="Certificado de Inglês 2 - Discover">
+                            </button>
+                        </div>
+                        <div class="certSlide">
+                            <button class="certificateButton" type="button" data-certificate="./assets/docs/Certificates/Discover/Certificado Robotica.pdf" aria-label="Open robotics certificate">
+                                <img src="./assets/images/Certificates/Robotica-Discover.png" alt="Certificado de Robótica - Discover">
+                            </button>
                         </div>
                     </div>
                     <button class="certPrev" type="button" aria-label="Previous Discover certificate"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
@@ -316,6 +326,16 @@
     </footer>
 
     <a href="#hero" class="btnTop" id="btnTop"><i class="fa-solid fa-angle-up"></i></a>
+
+    <div class="certificateModal" id="certificateModal" role="dialog" aria-modal="true" aria-labelledby="certificateModalTitle" hidden>
+        <div class="certificateModalContent">
+            <div class="certificateModalHeader">
+                <h2 id="certificateModalTitle">Certificate</h2>
+                <button class="certificateModalClose" id="certificateModalClose" type="button" aria-label="Close certificate">×</button>
+            </div>
+            <iframe id="certificateViewer" title="Certificate PDF viewer"></iframe>
+        </div>
+    </div>
 
     <script src="./assets/js/script.js"></script>
 

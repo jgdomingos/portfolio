@@ -128,6 +128,74 @@
   object-fit: contain;
 }
 
+.certificateButton {
+  background: transparent;
+  border: 0;
+  cursor: zoom-in;
+  padding: 0;
+}
+
+.certificateButton:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.certificateModal {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.82);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 1rem;
+  position: fixed;
+  z-index: 10;
+}
+
+.certificateModal[hidden] {
+  display: none;
+}
+
+.certificateModalContent {
+  background: var(--color-background);
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  height: min(90vh, 900px);
+  max-width: 1100px;
+  overflow: hidden;
+  width: min(100%, 1100px);
+}
+
+.certificateModalHeader {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+}
+
+.certificateModalHeader h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.certificateModalClose {
+  background: transparent;
+  border: 0;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+#certificateViewer {
+  border: 0;
+  height: calc(100% - 3.25rem);
+  width: 100%;
+}
+
 .certSlide i {
   color: var(--color-primary);
   font-size: 2rem;

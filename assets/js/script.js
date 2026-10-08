@@ -100,6 +100,55 @@ document.querySelectorAll(".certCarousel").forEach((carousel) => {
   updateCarousel(0);
 });
 
+// Certificate PDF viewer
+const certificateModal = document.getElementById("certificateModal");
+const certificateViewer = document.getElementById("certificateViewer");
+const certificateModalClose = document.getElementById("certificateModalClose");
+let lastCertificateTrigger = null;
+
+const closeCertificateModal = () => {
+  if (!certificateModal || !certificateViewer) {
+    return;
+  }
+
+  certificateModal.hidden = true;
+  certificateViewer.removeAttribute("src");
+  document.body.classList.remove("modal-open");
+  lastCertificateTrigger?.focus();
+};
+
+if (certificateModal && certificateViewer && certificateModalClose) {
+  document.querySelectorAll("[data-certificate]").forEach((certificate) => {
+    certificate.addEventListener("click", () => {
+      const certificatePath = certificate.dataset.certificate;
+
+      if (!certificatePath) {
+        return;
+      }
+
+      lastCertificateTrigger = certificate;
+      certificateViewer.src = certificatePath;
+      certificateModal.hidden = false;
+      document.body.classList.add("modal-open");
+      certificateModalClose.focus();
+    });
+  });
+
+  certificateModalClose.addEventListener("click", closeCertificateModal);
+
+  certificateModal.addEventListener("click", (event) => {
+    if (event.target === certificateModal) {
+      closeCertificateModal();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !certificateModal.hidden) {
+      closeCertificateModal();
+    }
+  });
+}
+
 // Formulário de contato -> abre o cliente de e-mail do visitante já preenchido
 // (sem back-end. Para não depender do cliente de e-mail, troque por Formspree/EmailJS/Web3Forms)
 const contactForm = document.getElementById("contactForm");
