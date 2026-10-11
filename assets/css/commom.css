@@ -1,3 +1,4 @@
+/* Reset and document defaults */
 * {
 	box-sizing: border-box;
 	font-family: var(--font-primary);
@@ -33,6 +34,7 @@ body::before {
 	z-index: 0;
 }
 
+/* Layout layers */
 header {
 	position: relative;
 	z-index: 2;
@@ -78,6 +80,7 @@ hr {
 	width: 70%;
 }
 
+/* Shared colors and icons */
 .brackets,
 .iconPrimary {
 	color: var(--color-primary);
@@ -227,7 +230,7 @@ nav ul .mobileOnly a {
 	white-space: nowrap;
 }
 
-/* btn Back Top */
+/* Back-to-top button */
 .btnTop {
   align-items: center;
   background-color: var(--color-primary);
@@ -255,7 +258,7 @@ nav ul .mobileOnly a {
   transform: scale(1.1);
 }
 
-/* Footer */
+/* Footer layout */
 
 footer::before {
 	background: linear-gradient(90deg, transparent, var(--color-primary) 25%, var(--color-primary) 75%, transparent);

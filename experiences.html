@@ -33,6 +33,7 @@
     </script>
     <link rel="shortcut icon" href="./assets/images/Favicon.png" type="image/x-icon">
 
+    <!-- Page styles -->
     <!-- Link CSS -->
     <link rel="stylesheet" href="./assets/css/variables.css">
     <link rel="stylesheet" href="./assets/css/commom.css">
@@ -53,7 +54,7 @@
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- Header -->
+    <!-- Main navigation -->
     <header>
         <nav>
             <p><strong><span class="brackets">João Guilherme</span> | .Dev</strong></p>
@@ -65,7 +66,7 @@
                 <li><a href="./index.html" data-i18n="nav.home">Home</a></li>
                 <li><a href="">PedraForte Quarry</a></li>
                 <li><a href="">Paramount Textiles</a></li>
-                <!-- Apenas em versões mobile -->
+                <!-- Mobile-only links -->
                 <hr class="mobileOnly">
                 <li class="mobileOnly"><a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank"><i class="fa-brands fa-linkedin-in iconPrimary" aria-hidden="true" style="font-size: 18px"></i> LinkedIn</a></li>
                 <li class="mobileOnly"><a href="https://github.com/jgdomingos" target="_blank"><i class="fa-brands fa-github iconPrimary" aria-hidden="true" style="font-size: 18px"></i> GitHub</a></li>
@@ -79,7 +80,7 @@
         </nav>
     </header>
 
-    <!-- Main content -->
+    <!-- Experience content -->
     <main id="main-content" tabindex="-1">
 
         <!-- Hero -->
@@ -96,6 +97,7 @@
 
                 <div class="work">
                     <img src="./assets/images/Work/Quarry.jpg" alt="PedraForte">
+                    <!-- Main skills -->
                     <div>
                         <h2>PedraForte Quarry</h2>
                         <p class="brackets" data-i18n="experience.quarry.role">Young Apprentice</p>
@@ -128,6 +130,7 @@
                     <span class="skillsWork" data-i18n="experience.skill.erpSystems">ERP Systems</span>
                 </div>
 
+                <!-- Experience summary -->
                 <aside class="workSnapshot" aria-labelledby="pedraForteSnapshotTitle">
                     <h3 id="pedraForteSnapshotTitle"><span class="brackets">&lt;</span><span data-i18n="experience.snapshot.title">Work Snapshot</span><span class="brackets">&gt;</span></h3>
 
@@ -160,6 +163,7 @@
 
                 <div class="work">
                     <img src="./assets/images/Work/Paramount.jpg" alt="Paramount Textiles">
+                    <!-- Main skills -->
                     <div>
                         <h2>Paramount Textiles</h2>
                         <p class="brackets" data-i18n="experience.paramount.role">PCP Intern</p>
@@ -192,6 +196,7 @@
                     <span class="skillsWork">PCP</span>
                 </div>
 
+                <!-- Experience summary -->
                 <aside class="workSnapshot" aria-labelledby="paramountSnapshotTitle">
                     <h3 id="paramountSnapshotTitle"><span class="brackets">&lt;</span><span data-i18n="experience.snapshot.title">Work Snapshot</span><span class="brackets">&gt;</span></h3>
 
@@ -218,7 +223,7 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Site footer -->
     <footer>
         <div class="footerGrid">
 
@@ -227,7 +232,7 @@
                 <p data-i18n="footer.role">Full Stack Developer</p>
             </div>
 
-            <!-- Quick Links -->
+            <!-- Quick links -->
             <div data-aos="fade-up" data-aos-delay="100">
                 <p><strong><span class="brackets">&lt;</span><span data-i18n="footer.quickLinks">Quick Links</span><span class="brackets">&gt;</span></strong></p>
                 <ul>
@@ -241,7 +246,7 @@
                 </ul>
             </div>
 
-            <!-- Quick contact -->
+            <!-- Contact links -->
             <div data-aos="fade-up" data-aos-delay="200">
                 <p><strong><span class="brackets">&lt;</span><span data-i18n="footer.availability">Available for opportunities and projects</span><span class="brackets">&gt;</span></strong></p>
                 <ul>
@@ -253,7 +258,7 @@
 
         </div>
 
-        <!-- Rights -->
+        <!-- Copyright -->
         <hr>
         <br>
         <p data-i18n="footer.copyright">&copy;2026 João Guilherme. All rights reserved.</p>
@@ -263,7 +268,7 @@
 
     <script src="./assets/js/script.js"></script>
 
-    <!-- AOS Animated -->
+    <!-- AOS animation library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({

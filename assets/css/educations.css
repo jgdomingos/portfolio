@@ -70,7 +70,7 @@
   gap: 0.5rem;
 }
 
-/* Section schools */
+/* School information */
 .school {
   display: flex;
   gap: 15px;
@@ -92,7 +92,7 @@
   padding: 0.15rem 0.35rem;
 }
 
-/* Certificate carousels */
+/* Certificate carousel */
 
 .certCarousel {
   margin-top: 1.5rem;
@@ -196,6 +196,7 @@ body.modal-open {
   width: 100%;
 }
 
+/* Certificate slide content */
 .certSlide i {
   color: var(--color-primary);
   font-size: 2rem;
@@ -259,6 +260,7 @@ body.modal-open {
   margin-top: 0.85rem;
 }
 
+/* Certificate navigation dots */
 .certDot {
   background: rgba(232, 236, 241, 0.35);
   border: 0;
@@ -275,6 +277,7 @@ body.modal-open {
   background: var(--color-primary);
 }
 
+/* Mobile certificate layout */
 @media (max-width: 700px) {
   #umc > div,
   #oneBitCode > div,

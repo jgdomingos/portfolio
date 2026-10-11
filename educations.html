@@ -33,6 +33,7 @@
     </script>
     <link rel="shortcut icon" href="./assets/images/Favicon.png" type="image/x-icon">
 
+    <!-- Page styles -->
     <!-- Link CSS -->
     <link rel="stylesheet" href="./assets/css/variables.css">
     <link rel="stylesheet" href="./assets/css/commom.css">
@@ -53,7 +54,7 @@
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- Header -->
+    <!-- Main navigation -->
     <header>
         <nav>
             <p><strong><span class="brackets">João Guilherme</span> | .Dev</strong></p>
@@ -67,7 +68,7 @@
                 <li><a href="#oneBitCode">OneBitCode</a></li>
                 <li><a href="#discover">Discover</a></li>
                 <li><a href="#fluency">Fluency Academy</a></li>
-                <!-- Apenas em versões mobile -->
+                <!-- Mobile-only links -->
                 <hr class="mobileOnly">
                 <li class="mobileOnly"><a href="https://www.linkedin.com/in/jgsdomingos/?locale=pt" target="_blank"><i class="fa-brands fa-linkedin-in iconPrimary" aria-hidden="true" style="font-size: 18px"></i> LinkedIn</a></li>
                 <li class="mobileOnly"><a href="https://github.com/jgdomingos" target="_blank"><i class="fa-brands fa-github iconPrimary" aria-hidden="true" style="font-size: 18px"></i> GitHub</a></li>
@@ -81,7 +82,7 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
+    <!-- Education content -->
     <main id="main-content" tabindex="-1">
 
         <!-- Hero -->
@@ -91,13 +92,14 @@
             <p data-aos="fade-up" data-aos-delay="100" data-i18n="education.pageDescription">Academic background, courses and the certificates that came out of them.</p>
         </section>
 
-        <!-- UMC -->
+        <!-- University of Mogi das Cruzes -->
         <section id="umc">
 
             <div data-aos="fade-up">
 
                 <div class="school">
                     <img src="./assets/images/Schools/UMC.png" alt="" loading="lazy">
+                    <!-- Main skills -->
                     <div>
                         <h2>University of Mogi das Cruzes</h2>
                         <p class="brackets" data-i18n="education.umc.course">Software Engineer</p>
@@ -120,6 +122,7 @@
                     <span class="skillsEducation">Dart</span>
                 </div>
 
+                <!-- UMC certificates -->
                 <div class="certCarousel" aria-label="UMC certificates">
                     <div class="certTrack">
                         <div class="certSlide">
@@ -136,13 +139,14 @@
             </div>
         </section>
 
-        <!-- OneBitCode -->
+        <!-- OneBitCode course -->
         <section id="oneBitCode">
 
             <div data-aos="fade-up">
 
                 <div class="school">
                     <img src="./assets/images/Schools/OneBitCode.png" alt="" loading="lazy">
+                    <!-- Main skills -->
                     <div>
                         <h2>OneBitCode</h2>
                         <p class="brackets" data-i18n="education.onebitcode.course">Full Stack Developer</p>
@@ -162,6 +166,7 @@
                     <span class="skillsEducation">CSS</span>
                 </div>
 
+                <!-- OneBitCode certificates -->
                 <div class="certCarousel" aria-label="OneBitCode certificates">
                     <div class="certTrack">
                         <div class="certSlide">
@@ -188,13 +193,14 @@
             </div>
         </section>
 
-        <!-- Discover -->
+        <!-- Discover School -->
         <section id="discover">
 
             <div data-aos="fade-up">
 
                 <div class="school">
                     <img src="./assets/images/Schools/Discover" alt="" loading="lazy">
+                    <!-- Main skills -->
                     <div>
                         <h2>Discover School</h2>
                         <p class="brackets" data-i18n="education.discover.course">English</p>
@@ -214,6 +220,7 @@
                     <span class="skillsEducation">Grammar</span>
                 </div>
 
+                <!-- Discover certificates -->
                 <div class="certCarousel" aria-label="Discover School certificates">
                     <div class="certTrack">
                         <div class="certSlide">
@@ -240,13 +247,14 @@
             </div>
         </section>
 
-        <!-- Fluency Academy -->
+        <!-- Fluency Academy course -->
         <section id="fluency">
 
             <div data-aos="fade-up">
 
                 <div class="school">
                     <img src="./assets/images/Schools/Fluency.png" alt="" loading="lazy">
+                    <!-- Main skills -->
                     <div>
                         <h2>Fluency Academy</h2>
                         <p class="brackets" data-i18n="education.fluency.course">English</p>
@@ -266,6 +274,7 @@
                     <span class="skillsEducation">Grammar</span>
                 </div>
 
+                <!-- Fluency certificates -->
                 <div class="certCarousel" aria-label="Fluency Academy certificates">
                     <div class="certTrack">
                         <div class="certSlide">
@@ -284,7 +293,7 @@
 
     </main>
     
-    <!-- Footer -->
+    <!-- Site footer -->
     <footer>
         <div class="footerGrid">
 
@@ -293,7 +302,7 @@
                 <p data-i18n="footer.role">Full Stack Developer</p>
             </div>
 
-            <!-- Quick Links -->
+            <!-- Quick links -->
             <div data-aos="fade-up" data-aos-delay="100">
                 <p><strong><span class="brackets">&lt;</span><span data-i18n="footer.quickLinks">Quick Links</span><span class="brackets">&gt;</span></strong></p>
                 <ul>
@@ -307,7 +316,7 @@
                 </ul>
             </div>
 
-            <!-- Quick contact -->
+            <!-- Contact links -->
             <div data-aos="fade-up" data-aos-delay="200">
                 <p><strong><span class="brackets">&lt;</span><span data-i18n="footer.availability">Available for opportunities and projects</span><span class="brackets">&gt;</span></strong></p>
                 <ul>
@@ -319,7 +328,7 @@
 
         </div>
 
-        <!-- Rights -->
+        <!-- Copyright -->
         <hr>
         <br>
         <p data-i18n="footer.copyright">&copy;2026 João Guilherme. All rights reserved.</p>
@@ -327,6 +336,7 @@
 
     <a href="#hero" class="btnTop" id="btnTop"><i class="fa-solid fa-angle-up"></i></a>
 
+    <!-- Certificate PDF modal -->
     <div class="certificateModal" id="certificateModal" role="dialog" aria-modal="true" aria-labelledby="certificateModalTitle" hidden>
         <div class="certificateModalContent">
             <div class="certificateModalHeader">
@@ -339,7 +349,7 @@
 
     <script src="./assets/js/script.js"></script>
 
-    <!-- AOS Animated -->
+    <!-- AOS animation library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({

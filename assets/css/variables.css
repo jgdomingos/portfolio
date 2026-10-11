@@ -1,3 +1,4 @@
+/* Color palette */
 :root {
     --color-primary: #7ee0c3;
     --color-second: #202733;
@@ -6,7 +7,9 @@
     --color-border: #171c26;
     --color-text: #e8ecf1;
 
+    /* Typography */
     --font-primary: "JetBrains Mono", monospace;
 
+    /* Shared component border */
     --border: 2px solid #1d232f;
 }
