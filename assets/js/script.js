@@ -1,16 +1,17 @@
+// Language translation
 const languageToggle = document.getElementById("languageToggle");
 
 async function changeLanguage(language) {
   const response = await fetch(`./assets/translations/${language}.json`);
   const translations = await response.json();
 
-  // Traduz textos normais
+  // Translate regular text
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
     element.textContent = translations[key] || key;
   });
 
-  // Traduz placeholders dos inputs
+  // Translate input placeholders
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
     const key = element.dataset.i18nPlaceholder;
     element.placeholder = translations[key] || key;
@@ -36,7 +37,7 @@ if (languageToggle) {
   });
 }
 
-// Menu hambúrguer (mobile)
+// Mobile navigation menu
 const navToggle = document.getElementById("navToggle");
 const navMenu = document.getElementById("navMenu");
 
@@ -46,7 +47,7 @@ if (navToggle && navMenu) {
     navToggle.setAttribute("aria-expanded", isOpen);
   });
 
-  // Fecha o menu ao clicar em algum link (útil no mobile)
+  // Close the menu after selecting a link
   navMenu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       navMenu.classList.remove("open");
@@ -55,7 +56,7 @@ if (navToggle && navMenu) {
   });
 }
 
-// Atualiza o ano do footer automaticamente
+// Update the footer year automatically
 const yearSpan = document.getElementById("year");
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
@@ -149,8 +150,8 @@ if (certificateModal && certificateViewer && certificateModalClose) {
   });
 }
 
-// Formulário de contato -> abre o cliente de e-mail do visitante já preenchido
-// (sem back-end. Para não depender do cliente de e-mail, troque por Formspree/EmailJS/Web3Forms)
+// Contact form: open the visitor's email client with a pre-filled message.
+// For a backend-independent form, replace this flow with Formspree, EmailJS, or Web3Forms.
 const contactForm = document.getElementById("contactForm");
  
 if (contactForm) {
@@ -172,7 +173,7 @@ if (contactForm) {
   });
 }
 
-// Button to return to the top
+// Back-to-top button
 const btnTop = document.getElementById('btnTop');
 
 if (btnTop) {
@@ -193,7 +194,7 @@ if (btnTop) {
   });
 }
 
-// Center section navigation, including links from the footer and other pages.
+// Center section navigation, including footer and cross-page links
 const centerSection = (sectionId, behavior = "smooth") => {
   const section = document.getElementById(sectionId);
 

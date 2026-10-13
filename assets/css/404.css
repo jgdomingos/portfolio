@@ -1,3 +1,4 @@
+/* Center the error page content */
 body {
     display: grid;
     min-height: 100vh;
@@ -10,12 +11,14 @@ main {
     width: min(100%, 50rem);
 }
 
+/* Error page title */
 main h1 {
    color: var(--color-primary);
    text-align: center;
    font-size: clamp(4rem, 15vw, 6.25rem);
 }
 
+/* Return link */
 main a {
     color: var(--color-primary);
     text-decoration: none;
