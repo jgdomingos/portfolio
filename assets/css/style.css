@@ -5,7 +5,8 @@
 #experiences,
 #education,
 #contact {
-  padding: 0 clamp(1.5rem, 6vw, 14rem);
+  max-width: 1600px;
+  padding: 0 clamp(1.5rem, 4vw, 5rem);
 }
 
 .btn {
@@ -85,10 +86,9 @@
 #hero {
   align-items: center;
   display: flex;
-  gap: 3rem;
-  justify-content: space-between;
-  margin-bottom: 5rem;
-  margin-top: 12rem;
+  gap: clamp(4rem, 8vw, 7rem);
+  justify-content: center;
+  margin: 12rem auto 5rem;
 }
 
 #hero div > img {
@@ -111,7 +111,7 @@
   display: grid;
   gap: 4rem;
   grid-template-columns: 1fr 1fr;
-  margin: 7.5rem 0;
+  margin: 7.5rem auto;
 }
 
 .cardsAboutMe {
@@ -177,7 +177,7 @@
 #skills {
   display: grid;
   gap: 4rem;
-  margin: 7.5rem 0;
+  margin: 7.5rem auto;
 }
 
 #skills article {
@@ -236,7 +236,7 @@
 #projects {
   display: grid;
   gap: 4rem;
-  margin: 7.5rem 0;
+  margin: 7.5rem auto;
 }
 
 #projects .cardProject a {
@@ -312,7 +312,7 @@
 #experiences {
   display: grid;
   gap: 4rem;
-  margin: 7.5rem 0;
+  margin: 7.5rem auto;
 }
 
 #experiences > p,
@@ -426,7 +426,7 @@
 #education {
   display: grid;
   gap: 4rem;
-  margin: 7.5rem 0;
+  margin: 7.5rem auto;
 }
 
 #education > div {
@@ -548,7 +548,7 @@
 #contact {
   display: grid;
   gap: 4rem;
-  margin: 7.5rem 0;
+  margin: 7.5rem auto;
 }
 
 .contactForm {
