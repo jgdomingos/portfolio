@@ -25,7 +25,13 @@ async function changeLanguage(language) {
   }
 }
 
-const savedLanguage = localStorage.getItem("language") || "en";
+const languagePreferenceVersion = "2";
+const savedLanguage =
+  localStorage.getItem("languagePreferenceVersion") === languagePreferenceVersion
+    ? localStorage.getItem("language") || "pt"
+    : "pt";
+
+localStorage.setItem("languagePreferenceVersion", languagePreferenceVersion);
 changeLanguage(savedLanguage);
 
 if (languageToggle) {
